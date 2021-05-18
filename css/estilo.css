@@ -30,7 +30,10 @@ body {
           border: solid 1px black; }
       body .container-fluid .footerBootstrap .footerBootstrap__itemFooter {
         padding-top: 30px;
-        list-style-type: none; }
+        list-style-type: none;
+        font-weight: 400; }
+      body .container-fluid .footerBootstrap .estiloWidth {
+        font-weight: 600; }
   body .container {
     padding-left: 0px;
     padding-right: 0px;
@@ -41,42 +44,44 @@ body {
       color: #E53935;
       font-size: 41px;
       text-align: center;
-      width: 500;
+      font-weight: 600;
       margin: 30px; }
     body .container h2 {
       color: #B65F50;
       font-size: 34px;
       text-align: left;
-      width: 400;
+      font-weight: 500;
       margin: 20px; }
     body .container h3 {
       color: #FF6F61;
       font-size: 25px;
       text-align: left;
-      width: 400;
+      font-weight: 500;
       margin: 25px 0px 0px 20px; }
     body .container h4 {
       color: #FF6F61;
       font-size: 18px;
       text-align: left;
-      width: 400;
+      font-weight: 500;
       margin: 20px 0px; }
     body .container p {
       color: black;
       font-size: 16px;
       text-align: justify;
-      width: 200;
+      font-weight: 400;
       margin: 10px; }
     body .container p {
       text-indent: 20px; }
     body .container .listaSubtitulo {
       color: #FF6F61;
       font-size: 18px;
+      font-weight: 500;
       list-style-type: square;
       margin: 0px; }
     body .container .listaContenido {
       color: black;
       font-size: 16px;
+      font-weight: 400;
       list-style-type: square;
       margin: 10px 0px; }
     body .container .caractIndex {
@@ -123,5 +128,3 @@ body {
       body .container .tabla .tabla__encabezadoTabla {
         font-size: 25px;
         color: #FF6F61; }
-    body .container .estiloWidth {
-      width: 800; }

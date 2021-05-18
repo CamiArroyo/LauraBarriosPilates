@@ -43,6 +43,11 @@ body {
             .footerBootstrap__itemFooter {
                 padding-top: 30px;
                 list-style-type: none;
+                font-weight: 400;
+            }
+
+            .estiloWidth {
+                font-weight: 600;
             }
         }
     }
@@ -55,24 +60,25 @@ body {
             color: $color;
             font-size: $tamanio;
             text-align: $alineacion;
-            width: $grosor;
+            font-weight: $grosor;
             margin: $margin;
         }
-        h1 {@include etiquetas($bordo, $xlarge, center, 500, 30px) }
-        h2 {@include etiquetas($marron, $large, left, 400, 20px)}
-        h3 {@include etiquetas($rosado, $medium, left, 400, 25px 0px 0px 20px)}
-        h4 {@include etiquetas($rosado, $small, left, 400, 20px 0px)}
-        p {@include etiquetas($negro, $xsmall, justify, 200, 10px)}
+        h1 {@include etiquetas($bordo, $xlarge, center, 600, 30px) }
+        h2 {@include etiquetas($marron, $large, left, 500, 20px)}
+        h3 {@include etiquetas($rosado, $medium, left, 500, 25px 0px 0px 20px)}
+        h4 {@include etiquetas($rosado, $small, left, 500, 20px 0px)}
+        p {@include etiquetas($negro, $xsmall, justify, 400, 10px)}
         p {text-indent: 20px;}
 
-        @mixin listas ($color, $tamanio, $estiloLista, $margin){
+        @mixin listas ($color, $tamanio, $grosor, $estiloLista, $margin){
             color: $color;
             font-size: $tamanio;
+            font-weight: $grosor;
             list-style-type: $estiloLista;
             margin: $margin;
         }
-        .listaSubtitulo {@include listas($rosado, $small, square, 0px)}
-        .listaContenido { @include listas($negro, $xsmall, square, 10px 0px)}
+        .listaSubtitulo {@include listas($rosado, $small, 500, square, 0px)}
+        .listaContenido { @include listas($negro, $xsmall, 400, square, 10px 0px)}
 
         /* Sección index */
 
@@ -147,10 +153,6 @@ body {
                 font-size: $medium;
                 color: $rosado;
             }
-        }
-
-        .estiloWidth {
-            width: 800; 
         }
 
     }
