@@ -123,3 +123,5 @@ body {
       body .container .tabla .tabla__encabezadoTabla {
         font-size: 25px;
         color: #FF6F61; }
+    body .container .estiloWidth {
+      width: 800; }
