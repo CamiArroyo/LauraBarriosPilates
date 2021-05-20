@@ -2,129 +2,125 @@
 /* Import de archivos con definición de variables */
 /* Variables: colores */
 /* Variables: tamaños */
-body {
-  background-color: #FFF5BD; }
-  body .container-fluid {
-    padding-left: 0px;
-    padding-right: 0px; }
-    body .container-fluid .navBootstrap {
-      font-size: 16px;
-      background-color: #E2B76E;
-      padding: 20px 0px 20px 10px; }
-      body .container-fluid .navBootstrap .dropdown-item {
-        font-size: 15px; }
-    body .container-fluid .footerBootstrap {
-      background-color: #E2B76E;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 30px 120px 10px 120px;
-      margin-top: 60px; }
-      body .container-fluid .footerBootstrap .footerBootstrap__inicioFooter {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        body .container-fluid .footerBootstrap .footerBootstrap__inicioFooter .footerBootstrap__inicioFooter--tituloContacto {
-          width: 100%;
-          text-align: center;
-          border: solid 1px black; }
-      body .container-fluid .footerBootstrap .footerBootstrap__itemFooter {
-        padding-top: 30px;
-        list-style-type: none;
-        font-weight: 400; }
-      body .container-fluid .footerBootstrap .estiloWidth {
-        font-weight: 600; }
-  body .container {
-    padding-left: 0px;
-    padding-right: 0px;
-    /* Sección index */
-    /* Sección servicios_que_se_brindan */
-    /* Sección nuestros_horarios */ }
-    body .container h1 {
-      color: #E53935;
-      font-size: 41px;
+body .container-fluid .navbar {
+  background-color: #E2B76E;
+  font-size: 16px; }
+  body .container-fluid .navbar .dropdown-item {
+    font-size: 16px; }
+
+body .container-fluid .footerBootstrap {
+  background-color: #E2B76E;
+  padding: 5px 70px 10px 70px;
+  margin-top: 60px; }
+  body .container-fluid .footerBootstrap .footerBootstrap__inicioFooter, body .container-fluid .footerBootstrap .footerBootstrap__finalFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .container-fluid .footerBootstrap .footerBootstrap__inicioFooter .footerBootstrap__inicioFooter--tituloContacto, body .container-fluid .footerBootstrap .footerBootstrap__finalFooter .footerBootstrap__inicioFooter--tituloContacto, body .container-fluid .footerBootstrap .footerBootstrap__finalFooter .footerBootstrap__finalFooter--tituloFinal {
+      color: black;
+      width: 100%;
       text-align: center;
-      font-weight: 600;
-      margin: 30px; }
-    body .container h2 {
-      color: #B65F50;
-      font-size: 34px;
-      text-align: left;
-      font-weight: 500;
-      margin: 20px; }
-    body .container h3 {
-      color: #FF6F61;
+      border: solid 1px black; }
+  body .container-fluid .footerBootstrap .footerBootstrap__itemFooter {
+    padding-top: 30px;
+    list-style-type: none;
+    font-weight: 400; }
+  body .container-fluid .footerBootstrap .footerBootstrap__finalFooter .footerBootstrap__finalFooter--tituloFinal {
+    background-color: #B65F50;
+    color: white; }
+  body .container-fluid .footerBootstrap .estiloWidth {
+    font-weight: 600; }
+
+body .container {
+  background-color: white;
+  /* Sección index */
+  /* Sección servicios_que_se_brindan */
+  /* Sección nuestros_horarios */ }
+  body .container h1 {
+    color: #E53935;
+    font-size: 41px;
+    text-align: center;
+    font-weight: 600;
+    margin: 30px; }
+  body .container h2 {
+    color: #B65F50;
+    font-size: 34px;
+    text-align: left;
+    font-weight: 500;
+    margin: 20px; }
+  body .container h3 {
+    color: #FF6F61;
+    font-size: 25px;
+    text-align: left;
+    font-weight: 500;
+    margin: 25px 0px 0px 20px; }
+  body .container h4 {
+    color: #FF6F61;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 500;
+    margin: 20px 0px; }
+  body .container p {
+    color: black;
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 400;
+    margin: 10px; }
+  body .container p {
+    text-indent: 20px; }
+  body .container .listaSubtitulo {
+    color: #FF6F61;
+    font-size: 18px;
+    font-weight: 500;
+    list-style-type: square;
+    margin: 0px; }
+  body .container .listaContenido {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    list-style-type: square;
+    margin: 10px 0px; }
+  body .container .caractIndex {
+    text-align: center; }
+  body .container .imagenesJoseph {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    body .container .imagenesJoseph .imagenesJoseph__imagen {
+      width: 70%;
+      height: 70%;
+      margin: 20px 20px 0px 20px; }
+  body .container .beneficiosMetodo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; }
+    body .container .beneficiosMetodo .beneficiosMetodo__consejo {
+      background-color: #E2B76E;
+      text-align: center;
+      letter-spacing: 2px;
+      word-spacing: 4px;
+      margin: 30px;
+      transform: rotate(8deg); }
+  body .container .imgMetodo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    justify-content: space-around; }
+    body .container .imgMetodo .imgMetodo__imgServicio {
+      transition: 1s; }
+    body .container .imgMetodo .imgMetodo__imgServicio:hover {
+      height: 32%;
+      width: 32%; }
+    body .container .imgMetodo .imgMetodo__imgCircuito {
+      transition: 1s; }
+    body .container .imgMetodo .imgMetodo__imgCircuito:hover {
+      height: 54%;
+      width: 54%; }
+  body .container .tabla, body .container .tabla .tabla__encabezadoTabla {
+    border: solid 2px black;
+    text-align: center;
+    font-size: 16px; }
+    body .container .tabla .tabla__encabezadoTabla {
       font-size: 25px;
-      text-align: left;
-      font-weight: 500;
-      margin: 25px 0px 0px 20px; }
-    body .container h4 {
-      color: #FF6F61;
-      font-size: 18px;
-      text-align: left;
-      font-weight: 500;
-      margin: 20px 0px; }
-    body .container p {
-      color: black;
-      font-size: 16px;
-      text-align: justify;
-      font-weight: 400;
-      margin: 10px; }
-    body .container p {
-      text-indent: 20px; }
-    body .container .listaSubtitulo {
-      color: #FF6F61;
-      font-size: 18px;
-      font-weight: 500;
-      list-style-type: square;
-      margin: 0px; }
-    body .container .listaContenido {
-      color: black;
-      font-size: 16px;
-      font-weight: 400;
-      list-style-type: square;
-      margin: 10px 0px; }
-    body .container .caractIndex {
-      text-align: center; }
-    body .container .imagenesJoseph {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around; }
-      body .container .imagenesJoseph .imagenesJoseph__imagen {
-        width: 70%;
-        height: 70%;
-        margin: 20px 20px 0px 20px; }
-    body .container .beneficiosMetodo {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-end; }
-      body .container .beneficiosMetodo .beneficiosMetodo__consejo {
-        background-color: #E2B76E;
-        text-align: center;
-        letter-spacing: 2px;
-        word-spacing: 4px;
-        margin: 30px;
-        transform: rotate(8deg); }
-    body .container .imgMetodo {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      margin: 20px 0px;
-      justify-content: space-around; }
-      body .container .imgMetodo .imgMetodo__imgServicio {
-        transition: 1s; }
-      body .container .imgMetodo .imgMetodo__imgServicio:hover {
-        height: 32%;
-        width: 32%; }
-      body .container .imgMetodo .imgMetodo__imgCircuito {
-        transition: 1s; }
-      body .container .imgMetodo .imgMetodo__imgCircuito:hover {
-        height: 54%;
-        width: 54%; }
-    body .container .tabla, body .container .tabla .tabla__encabezadoTabla {
-      border: solid 2px black;
-      text-align: center;
-      font-size: 16px; }
-      body .container .tabla .tabla__encabezadoTabla {
-        font-size: 25px;
-        color: #FF6F61; }
+      color: #FF6F61; }

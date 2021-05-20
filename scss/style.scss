@@ -4,58 +4,54 @@
 @import "tamanios";
 
 body {
-    background-color: $crema;
 
-    .container-fluid {
-        padding-left: 0px;
-        padding-right: 0px;
+    .container-fluid{
 
-        .navBootstrap {
-            font-size: $xsmall;
+        .navbar {
             background-color: $mostaza;
-            padding: 20px 0px 20px 10px;
-
+            font-size: $xsmall;
             .dropdown-item {
-                font-size: $xxsmall;
+                font-size: $xsmall;
             }
         }
-        
         .footerBootstrap {
             background-color: $mostaza;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 30px 120px 10px 120px;
+            padding: 5px 70px 10px 70px;
             margin-top: 60px;
-
             .footerBootstrap__inicioFooter {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-
                 .footerBootstrap__inicioFooter--tituloContacto {
+                    color: $negro;
                     width: 100%;
                     text-align: center;
                     border: solid 1px $negro;
                 }
             }
-    
             .footerBootstrap__itemFooter {
                 padding-top: 30px;
                 list-style-type: none;
                 font-weight: 400;
             }
+            .footerBootstrap__finalFooter{
+                @extend .footerBootstrap__inicioFooter;
 
+                .footerBootstrap__finalFooter--tituloFinal{
+                    @extend .footerBootstrap__inicioFooter--tituloContacto;
+                    background-color: $marron;
+                    color: $blanco;
+                }
+            }
             .estiloWidth {
                 font-weight: 600;
             }
         }
     }
 
-    .container {
-        padding-left: 0px;
-        padding-right: 0px;
-
+    .container{
+        background-color: $blanco;
+        
         @mixin etiquetas ($color, $tamanio, $alineacion, $grosor, $margin){
             color: $color;
             font-size: $tamanio;
@@ -156,4 +152,5 @@ body {
         }
 
     }
+
 }
