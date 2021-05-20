@@ -5,8 +5,7 @@
 
 body {
 
-    .container-fluid{
-
+    .contenedor {
         .navbar {
             background-color: $mostaza;
             font-size: $xsmall;
@@ -14,6 +13,16 @@ body {
                 font-size: $xsmall;
             }
         }
+        .hechoPor {
+            padding: 10px;
+            font-size: $xxsmall;
+            text-align: center;
+            background-color: $marron;
+            color: $blanco;
+        }
+    }
+
+    .container-fluid {
         .footerBootstrap {
             background-color: $mostaza;
             padding: 5px 70px 10px 70px;
@@ -22,29 +31,14 @@ body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                .footerBootstrap__inicioFooter--tituloContacto {
-                    color: $negro;
-                    width: 100%;
-                    text-align: center;
-                    border: solid 1px $negro;
-                }
             }
             .footerBootstrap__itemFooter {
                 padding-top: 30px;
                 list-style-type: none;
                 font-weight: 400;
-            }
-            .footerBootstrap__finalFooter{
-                @extend .footerBootstrap__inicioFooter;
-
-                .footerBootstrap__finalFooter--tituloFinal{
-                    @extend .footerBootstrap__inicioFooter--tituloContacto;
-                    background-color: $marron;
-                    color: $blanco;
+                .estiloWidth {
+                    font-weight: 600;
                 }
-            }
-            .estiloWidth {
-                font-weight: 600;
             }
         }
     }
@@ -123,8 +117,7 @@ body {
             }
     
             .imgMetodo__imgServicio:hover {
-                height: 32%;
-                width: 32%;
+                transform: scale(1.2);
             }
     
             .imgMetodo__imgCircuito {
@@ -132,8 +125,7 @@ body {
             }
     
             .imgMetodo__imgCircuito:hover {
-                height: 54%;
-                width: 54%;
+                transform: scale(1.2);
             }
         }
 
@@ -150,7 +142,6 @@ body {
                 color: $rosado;
             }
         }
-
     }
-
+    
 }

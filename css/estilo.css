@@ -2,34 +2,33 @@
 /* Import de archivos con definición de variables */
 /* Variables: colores */
 /* Variables: tamaños */
-body .container-fluid .navbar {
+body .contenedor .navbar {
   background-color: #E2B76E;
   font-size: 16px; }
-  body .container-fluid .navbar .dropdown-item {
+  body .contenedor .navbar .dropdown-item {
     font-size: 16px; }
+
+body .contenedor .hechoPor {
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  background-color: #B65F50;
+  color: white; }
 
 body .container-fluid .footerBootstrap {
   background-color: #E2B76E;
   padding: 5px 70px 10px 70px;
   margin-top: 60px; }
-  body .container-fluid .footerBootstrap .footerBootstrap__inicioFooter, body .container-fluid .footerBootstrap .footerBootstrap__finalFooter {
+  body .container-fluid .footerBootstrap .footerBootstrap__inicioFooter {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    body .container-fluid .footerBootstrap .footerBootstrap__inicioFooter .footerBootstrap__inicioFooter--tituloContacto, body .container-fluid .footerBootstrap .footerBootstrap__finalFooter .footerBootstrap__inicioFooter--tituloContacto, body .container-fluid .footerBootstrap .footerBootstrap__finalFooter .footerBootstrap__finalFooter--tituloFinal {
-      color: black;
-      width: 100%;
-      text-align: center;
-      border: solid 1px black; }
   body .container-fluid .footerBootstrap .footerBootstrap__itemFooter {
     padding-top: 30px;
     list-style-type: none;
     font-weight: 400; }
-  body .container-fluid .footerBootstrap .footerBootstrap__finalFooter .footerBootstrap__finalFooter--tituloFinal {
-    background-color: #B65F50;
-    color: white; }
-  body .container-fluid .footerBootstrap .estiloWidth {
-    font-weight: 600; }
+    body .container-fluid .footerBootstrap .footerBootstrap__itemFooter .estiloWidth {
+      font-weight: 600; }
 
 body .container {
   background-color: white;
@@ -110,13 +109,11 @@ body .container {
     body .container .imgMetodo .imgMetodo__imgServicio {
       transition: 1s; }
     body .container .imgMetodo .imgMetodo__imgServicio:hover {
-      height: 32%;
-      width: 32%; }
+      transform: scale(1.2); }
     body .container .imgMetodo .imgMetodo__imgCircuito {
       transition: 1s; }
     body .container .imgMetodo .imgMetodo__imgCircuito:hover {
-      height: 54%;
-      width: 54%; }
+      transform: scale(1.2); }
   body .container .tabla, body .container .tabla .tabla__encabezadoTabla {
     border: solid 2px black;
     text-align: center;
