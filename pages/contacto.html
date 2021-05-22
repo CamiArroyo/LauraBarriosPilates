@@ -66,40 +66,82 @@
         </nav>
     </div>
     <!-- Cierre de nav -->
+
+    <!-- Apertura de slider -->
+    <div class="parallax">
+        <div class="parallax__tituloSeccion">
+            <h1 data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">Medios de contacto</h1>
+        </div>
+    </div>
+    <!-- Cierre de slider -->
     
     <!-- Apertura de section -->
     <div class="container">
 
         <div class="row">
-            <div class="col-xs-12 col-lg-12">
-                <h1 data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500">Medios de contacto</h1>
-            </div>
-        </div>
-        <div class="row">
             <div class="col-xs-12 col-lg-6">
-                <h2 data-aos="fade-right">Teléfono y mail</h2>
-                    <p data-aos="fade-left"><h4>Teléfono celular personal:</h4> (3564) 683537</p>
-                    <p data-aos="fade-left"><h4>Dirección de correo electrónico:</h4> lalibarrios@gmail.com</p>
+                <h2 data-aos="fade-right">Llamadas, whatsapp y mail</h2>
+                <div class="telefonoMail" data-aos="fade-left">
+                    <div>
+                        <div><img src="../assets/img/logoLlamada.png" alt="telefono" height="20px" width="20px">   (3564) 683537</div>
+                        <div><img src="../assets/img/logoMail.png" alt="mail" height="20px" width="20px">   lalibarrios@gmail.com</div>
+                    </div>
+                    <div>
+                        <a href="https://wa.link/wi6bhw" target="_blank"><img src="../assets/img/logoWhatsapp.png" alt="whatsapp" height="90px" width="90px"></a>
+                    </div>
+                </div>
                 <h2 data-aos="fade-right">Redes sociales</h2>
-                    <div class="row redesSociales">
-                        <div class="col-xs-12 col-lg-4">
-                            <h4 data-aos="fade-left">Instagram:</h4>
-                            <a href="https://www.instagram.com/laurabarriospilates/" target="_blank"><img src="../assets/img/logoInstagram.png" alt="instagram" height="90px" width="90px"></a>
+                <div class="row" data-aos="fade-left">
+                    <div class="col-xs-12 col-lg-12 redesSociales">
+                        <a href="https://www.instagram.com/laurabarriospilates/" target="_blank"><img src="../assets/img/logoInstagram.png" alt="instagram" height="90px" width="90px"></a>
+                        <a href="https://www.facebook.com/LauraBarriosPilates" target="_blank"><img src="../assets/img/logoFacebook.png" alt="facebook" height="90px" width="90px"></a>
+                    </div>
+                </div>
+                <h2 data-aos="fade-right">Nosotros te contactamos</h2>
+                <form id="formulario" data-aos="fade-left">
+                    <span>Complete el siguiente formulario:</span>
+                    <input type="text" class="form-control" placeholder="Nombre y apellido">
+                    <input type="text" class="form-control" placeholder="Teléfono">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Correo electrónico">
                         </div>
-                        <div class="col-xs-12 col-lg-4">
-                            <h4 data-aos="fade-left">Facebook:</h4>
-                            <a href="https://www.facebook.com/LauraBarriosPilates" target="_blank"><img src="../assets/img/logoFacebook.png" alt="facebook" height="90px" width="90px"></a>
-                        </div>
-                        <div class="col-xs-12 col-lg-4">
+                        <div class="col">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">@</div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="gmail.com">
+                            </div>
                         </div>
                     </div>
+                    <span>¿Por qué medio quiere ser contactado?</span>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Por teléfono
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Por mail
+                        </label>
+                    </div>
+                    <div class="botones">
+                        <button type="reset" class="btn btn-primary">Limpiar formulario</button>
+                        <button type="submit" class="btn btn-primary">Enviar formulario</button>
+                    </div>
+                </form>
             </div>
             <div class="col-xs-12 col-lg-6">
                 <h2 data-aos="fade-right">Ubicación</h2>
-                <p data-aos="fade-left">Dirección del estudio: Belgrano 576 - Devoto, Córdoba, Argentina</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1204.0123535678001!2d-62.30845347820626!3d-31.401416947347734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cb336897cd5ba1%3A0xda29b5f929a010f7!2sLaura%20Barrios%20Pilates!5e0!3m2!1ses-419!2sar!4v1617289223001!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" data-aos="fade-left"></iframe>
+                <p data-aos="fade-left">
+                    <img src="../assets/img/logoUbicacion.png" alt="ubicacion" height="20px" width="20px">   Dirección del estudio: Belgrano 576 - Devoto, Córdoba, Argentina
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1204.0123535678001!2d-62.30845347820626!3d-31.401416947347734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cb336897cd5ba1%3A0xda29b5f929a010f7!2sLaura%20Barrios%20Pilates!5e0!3m2!1ses-419!2sar!4v1617289223001!5m2!1ses-419!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" data-aos="fade-left"></iframe>
             </div>
         </div>
 
@@ -112,31 +154,36 @@
             <div class="col-xs-12 col-lg-12 footerBootstrap__inicioFooter">
                 <img src="../assets/img/logo.png" alt="logo" height="200px" width="260px">
             </div>
-            <div class="col-xs-12 col-lg-3 footerBootstrap__itemFooter">
-                <p class="estiloWidth">Celular:</p> 
-                <p>(3564) 683537</p>
+            <div class="col-xs-12 col-lg-1"></div>
+            <div class="col-xs-12 col-lg-2 footerBootstrap__itemFooter">
+                <div class="footerBootstrap__itemFooter--tituloItem">Llamadas y whatsapp:</div>
+                <img src="../assets/img/logoLlamada.png" alt="instagram" height="20px" width="20px">(3564) 683537
+                <div><a href="https://wa.link/wi6bhw" target="_blank"><img src="../assets/img/logoWhatsapp.png" alt="facebook" height="60px" width="60px"></a></div>
             </div>
-            <div class="col-xs-12 col-lg-3 footerBootstrap__itemFooter">
-                <p class="estiloWidth">Mail de contacto:</p> 
-                <p>lalibarrios@gmail.com</p>
+            <div class="col-xs-12 col-lg-2 footerBootstrap__itemFooter">
+                <div class="footerBootstrap__itemFooter--tituloItem">Mail de contacto:</div> 
+                <img src="../assets/img/logoMail.png" alt="instagram" height="20px" width="20px">lalibarrios@gmail.com
             </div>
-            <div class="col-xs-12 col-lg-3 footerBootstrap__itemFooter">
-                <p class="estiloWidth">Redes sociales:</p>
+            <div class="col-xs-12 col-lg-2 footerBootstrap__itemFooter">
+                <div class="footerBootstrap__itemFooter--tituloItem">Formulario de contacto:</div>
+                <a href="../pages/contacto.html#formulario" class="footerBootstrap__itemFooter--enlace">Ir al formulario</p></a>
+            </div>
+            <div class="col-xs-12 col-lg-2 footerBootstrap__itemFooter">
+                <div class="footerBootstrap__itemFooter--tituloItem">Redes sociales:</div>
                 <a href="https://www.instagram.com/laurabarriospilates/" target="_blank"><img src="../assets/img/logoInstagram.png" alt="instagram" height="60px" width="60px"></a>
                 <a href="https://www.facebook.com/LauraBarriosPilates" target="_blank"><img src="../assets/img/logoFacebook.png" alt="instagram" height="60px" width="60px"></a> 
             </div>
             <div class="col-xs-12 col-lg-3 footerBootstrap__itemFooter">
-                <p class="estiloWidth">Ubicación:</p> 
-                <p>Belgrano 576 - Devoto, Córdoba</p>
+                <div class="footerBootstrap__itemFooter--tituloItem">Ubicación:</div> 
+                <img src="../assets/img/logoUbicacion.png" alt="instagram" height="20px" width="20px">Belgrano 576 - Devoto, Córdoba
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1204.0123535678001!2d-62.30845347820626!3d-31.401416947347734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cb336897cd5ba1%3A0xda29b5f929a010f7!2sLaura%20Barrios%20Pilates!5e0!3m2!1ses-419!2sar!4v1617289223001!5m2!1ses-419!2sar" width="250" height="60" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
             </div>
         </div>
     </div>
-    <!-- Cierre de footer -->
-
     <div class="contenedor">
-        <p class="hechoPor">Hecho por: Camila Arroyo. Todos los derechos reservados.</p>
+        <div class="hechoPor">Hecho por: Camila Arroyo. 2021<div>
     </div>
+    <!-- Cierre de footer -->
 
     <!-- Link JS de Bootstrap v.4.0 - Bundle -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

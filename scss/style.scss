@@ -5,6 +5,56 @@
 
 body {
 
+    background-image: linear-gradient(to bottom, $rosa, $blanco);
+
+    @mixin etiquetas ($color, $tamanio, $alineacion, $grosor, $margin){
+        color: $color;
+        font-size: $tamanio;
+        text-align: $alineacion;
+        font-weight: $grosor;
+        margin: $margin;
+    }
+    h1 {@include etiquetas($bordo, $xlarge, center, 600, 30px) }
+    h2 {@include etiquetas($marron, $large, left, 500, 20px)}
+    h3 {@include etiquetas($rosado, $medium, left, 500, 25px 0px 0px 20px)}
+    h4 {@include etiquetas($rosado, $small, left, 500, 20px 0px)}
+    p {@include etiquetas($negro, $xsmall, justify, 400, 10px)}
+    p {text-indent: 20px;}
+
+    @mixin listas ($color, $tamanio, $grosor, $estiloLista, $margin){
+        color: $color;
+        font-size: $tamanio;
+        font-weight: $grosor;
+        list-style-type: $estiloLista;
+        margin: $margin;
+    }
+    .listaSubtitulo {@include listas($rosado, $small, 500, square, 0px)}
+    .listaContenido { @include listas($negro, $xsmall, 400, square, 10px 0px)}
+
+    .parallax {
+        /* The image used */
+        background-image: url("../assets/img/estudio1.jpg");
+
+        /* Set a specific height */
+        height: 400px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        /* box modeling */
+        margin-bottom:50px;
+
+        .parallax__tituloSeccion {
+            padding-top: 10%;
+            text-align: center;
+            /*
+            padding: 200px 0px 50px 500px; */
+        }
+    }
+
     .contenedor {
         .navbar {
             background-color: $mostaza;
@@ -13,62 +63,10 @@ body {
                 font-size: $xsmall;
             }
         }
-        .hechoPor {
-            padding: 10px;
-            font-size: $xxsmall;
-            text-align: center;
-            background-color: $marron;
-            color: $blanco;
-        }
-    }
 
-    .container-fluid {
-        .footerBootstrap {
-            background-color: $mostaza;
-            padding: 5px 70px 10px 70px;
-            margin-top: 60px;
-            .footerBootstrap__inicioFooter {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .footerBootstrap__itemFooter {
-                padding-top: 30px;
-                list-style-type: none;
-                font-weight: 400;
-                .estiloWidth {
-                    font-weight: 600;
-                }
-            }
-        }
     }
 
     .container{
-        background-color: $blanco;
-        
-        @mixin etiquetas ($color, $tamanio, $alineacion, $grosor, $margin){
-            color: $color;
-            font-size: $tamanio;
-            text-align: $alineacion;
-            font-weight: $grosor;
-            margin: $margin;
-        }
-        h1 {@include etiquetas($bordo, $xlarge, center, 600, 30px) }
-        h2 {@include etiquetas($marron, $large, left, 500, 20px)}
-        h3 {@include etiquetas($rosado, $medium, left, 500, 25px 0px 0px 20px)}
-        h4 {@include etiquetas($rosado, $small, left, 500, 20px 0px)}
-        p {@include etiquetas($negro, $xsmall, justify, 400, 10px)}
-        p {text-indent: 20px;}
-
-        @mixin listas ($color, $tamanio, $grosor, $estiloLista, $margin){
-            color: $color;
-            font-size: $tamanio;
-            font-weight: $grosor;
-            list-style-type: $estiloLista;
-            margin: $margin;
-        }
-        .listaSubtitulo {@include listas($rosado, $small, 500, square, 0px)}
-        .listaContenido { @include listas($negro, $xsmall, 400, square, 10px 0px)}
 
         /* Sección index */
 
@@ -142,6 +140,82 @@ body {
                 color: $rosado;
             }
         }
-    }
+
+        /* Sección contacto */
+
+        .telefonoMail {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        .redesSociales {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        form {
+            font-size: $xsmall;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            .form-control {
+                margin-top: 10px;
+            }
     
+            .botones {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+    
+            .btn {
+                padding: 10px;
+                margin: 10px;
+                background-color: $marron;
+                border: none;
+            }
+        }
+
+    }
+
+    .container-fluid {
+
+        .footerBootstrap {
+            background-color: $mostaza;
+            margin-top: 60px;
+            .footerBootstrap__inicioFooter {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .footerBootstrap__itemFooter {
+                font-size: $xsmall;
+                list-style-type: none;
+                font-weight: 400;
+                .footerBootstrap__itemFooter--tituloItem {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-weight: 600;
+                }
+                .footerBootstrap__itemFooter--enlace {
+                    color: $negro;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .contenedor {
+        .hechoPor {
+            padding: 10px;
+            font-size: $xxsmall;
+            text-align: center;
+            background-color: $marron;
+            color: $blanco;
+        }
+    }
+
 }
