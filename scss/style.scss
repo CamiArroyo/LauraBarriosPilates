@@ -5,7 +5,7 @@
 
 body {
 
-    background-image: linear-gradient(to bottom, $rosa, $blanco);
+    background-image: linear-gradient(to bottom, $fondo, $blanco);
 
     @mixin etiquetas ($color, $tamanio, $alineacion, $grosor, $margin){
         color: $color;
@@ -14,10 +14,13 @@ body {
         font-weight: $grosor;
         margin: $margin;
     }
-    h1 {@include etiquetas($bordo, $xlarge, center, 600, 30px) }
-    h2 {@include etiquetas($marron, $large, left, 500, 20px)}
-    h3 {@include etiquetas($rosado, $medium, left, 500, 25px 0px 0px 20px)}
-    h4 {@include etiquetas($rosado, $small, left, 500, 20px 0px)}
+    h1 {@include etiquetas($rojoOscuro, $xlarge, center, 700, 30px); 
+        font-family: 'Merienda One', cursive;}
+    h2 {@include etiquetas($rojoOscuro, $large, left, 550, 20px);
+        font-family: 'Merienda One', cursive;}
+    h3 {@include etiquetas($rojoClaro, $medium, left, 550, 25px 0px 0px 20px);
+        font-family: 'Merienda One', cursive;}
+    h4 {@include etiquetas($rojoClaro, $small, left, 550, 20px 0px)}
     p {@include etiquetas($negro, $xsmall, justify, 400, 10px)}
     p {text-indent: 20px;}
 
@@ -28,8 +31,12 @@ body {
         list-style-type: $estiloLista;
         margin: $margin;
     }
-    .listaSubtitulo {@include listas($rosado, $small, 500, square, 0px)}
-    .listaContenido { @include listas($negro, $xsmall, 400, square, 10px 0px)}
+    .listaSubtitulo {@include listas($rojoClaro, $small, 500, circle, 0px)}
+    .listaContenido { @include listas($negro, $xsmall, 400, circle, 10px 0px)}
+
+    .resaltado {
+        font-weight: 650;
+    }
 
     .parallax {
         /* The image used */
@@ -50,20 +57,20 @@ body {
         .parallax__tituloSeccion {
             padding-top: 10%;
             text-align: center;
-            /*
-            padding: 200px 0px 50px 500px; */
         }
     }
 
     .contenedor {
         .navbar {
-            background-color: $mostaza;
+            background-color: $rosado;
             font-size: $xsmall;
             .dropdown-item {
                 font-size: $xsmall;
             }
         }
-
+        .dropdown-menu {
+            background-color: $rosado;
+        }
     }
 
     .container{
@@ -71,6 +78,7 @@ body {
         /* Sección index */
 
         .caractIndex {
+            font-size: $small;
             text-align: center;
         }
 
@@ -92,7 +100,7 @@ body {
             align-items: flex-end;
 
             .beneficiosMetodo__consejo {
-                background-color: $mostaza;
+                background-color: $rojoClaro;
                 text-align: center;
                 letter-spacing: 2px;
                 word-spacing: 4px;
@@ -115,7 +123,7 @@ body {
             }
     
             .imgMetodo__imgServicio:hover {
-                transform: scale(1.2);
+                transform: scale(1.5);
             }
     
             .imgMetodo__imgCircuito {
@@ -123,7 +131,7 @@ body {
             }
     
             .imgMetodo__imgCircuito:hover {
-                transform: scale(1.2);
+                transform: scale(1.5);
             }
         }
 
@@ -137,7 +145,8 @@ body {
             .tabla__encabezadoTabla {
                 @extend .tabla;
                 font-size: $medium;
-                color: $rosado;
+                color: $rojoClaro;
+                font-family: 'Merienda One', cursive;
             }
         }
 
@@ -174,7 +183,7 @@ body {
             .btn {
                 padding: 10px;
                 margin: 10px;
-                background-color: $marron;
+                background-color: $rojoOscuro;
                 border: none;
             }
         }
@@ -184,7 +193,7 @@ body {
     .container-fluid {
 
         .footerBootstrap {
-            background-color: $mostaza;
+            background-color: $rosado;
             margin-top: 60px;
             .footerBootstrap__inicioFooter {
                 display: flex;
@@ -199,6 +208,7 @@ body {
                     padding-top: 10px;
                     padding-bottom: 10px;
                     font-weight: 600;
+                    color: $rojoOscuro;
                 }
                 .footerBootstrap__itemFooter--enlace {
                     color: $negro;
@@ -213,8 +223,8 @@ body {
             padding: 10px;
             font-size: $xxsmall;
             text-align: center;
-            background-color: $marron;
-            color: $blanco;
+            background-color: $rojoClaro;
+            color: $negro;
         }
     }
 

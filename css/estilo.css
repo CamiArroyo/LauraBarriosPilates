@@ -5,28 +5,31 @@
 body {
   background-image: linear-gradient(to bottom, #FFDDDD, #FFFFFF); }
   body h1 {
-    color: #E53935;
+    color: #C12626;
     font-size: 60px;
     text-align: center;
-    font-weight: 600;
-    margin: 30px; }
+    font-weight: 700;
+    margin: 30px;
+    font-family: 'Merienda One', cursive; }
   body h2 {
-    color: #B44141;
+    color: #C12626;
     font-size: 34px;
     text-align: left;
-    font-weight: 500;
-    margin: 20px; }
+    font-weight: 550;
+    margin: 20px;
+    font-family: 'Merienda One', cursive; }
   body h3 {
-    color: #FF6F61;
+    color: #F67171;
     font-size: 25px;
     text-align: left;
-    font-weight: 500;
-    margin: 25px 0px 0px 20px; }
+    font-weight: 550;
+    margin: 25px 0px 0px 20px;
+    font-family: 'Merienda One', cursive; }
   body h4 {
-    color: #FF6F61;
+    color: #F67171;
     font-size: 18px;
     text-align: left;
-    font-weight: 500;
+    font-weight: 550;
     margin: 20px 0px; }
   body p {
     color: black;
@@ -37,17 +40,19 @@ body {
   body p {
     text-indent: 20px; }
   body .listaSubtitulo {
-    color: #FF6F61;
+    color: #F67171;
     font-size: 18px;
     font-weight: 500;
-    list-style-type: square;
+    list-style-type: circle;
     margin: 0px; }
   body .listaContenido {
     color: black;
     font-size: 16px;
     font-weight: 400;
-    list-style-type: square;
+    list-style-type: circle;
     margin: 10px 0px; }
+  body .resaltado {
+    font-weight: 650; }
   body .parallax {
     /* The image used */
     background-image: url("../assets/img/estudio1.jpg");
@@ -62,20 +67,21 @@ body {
     margin-bottom: 50px; }
     body .parallax .parallax__tituloSeccion {
       padding-top: 10%;
-      text-align: center;
-      /*
-            padding: 200px 0px 50px 500px; */ }
+      text-align: center; }
   body .contenedor .navbar {
-    background-color: #EF7373;
+    background-color: #FACECE;
     font-size: 16px; }
     body .contenedor .navbar .dropdown-item {
       font-size: 16px; }
+  body .contenedor .dropdown-menu {
+    background-color: #FACECE; }
   body .container {
     /* Sección index */
     /* Sección servicios_que_se_brindan */
     /* Sección nuestros_horarios */
     /* Sección contacto */ }
     body .container .caractIndex {
+      font-size: 18px;
       text-align: center; }
     body .container .imagenesJoseph {
       display: flex;
@@ -90,7 +96,7 @@ body {
       flex-direction: row;
       align-items: flex-end; }
       body .container .beneficiosMetodo .beneficiosMetodo__consejo {
-        background-color: #EF7373;
+        background-color: #F67171;
         text-align: center;
         letter-spacing: 2px;
         word-spacing: 4px;
@@ -105,18 +111,19 @@ body {
       body .container .imgMetodo .imgMetodo__imgServicio {
         transition: 1s; }
       body .container .imgMetodo .imgMetodo__imgServicio:hover {
-        transform: scale(1.2); }
+        transform: scale(1.5); }
       body .container .imgMetodo .imgMetodo__imgCircuito {
         transition: 1s; }
       body .container .imgMetodo .imgMetodo__imgCircuito:hover {
-        transform: scale(1.2); }
+        transform: scale(1.5); }
     body .container .tabla, body .container .tabla .tabla__encabezadoTabla {
       border: solid 2px black;
       text-align: center;
       font-size: 16px; }
       body .container .tabla .tabla__encabezadoTabla {
         font-size: 25px;
-        color: #FF6F61; }
+        color: #F67171;
+        font-family: 'Merienda One', cursive; }
     body .container .telefonoMail {
       display: flex;
       flex-direction: row;
@@ -139,10 +146,10 @@ body {
       body .container form .btn {
         padding: 10px;
         margin: 10px;
-        background-color: #B44141;
+        background-color: #C12626;
         border: none; }
   body .container-fluid .footerBootstrap {
-    background-color: #EF7373;
+    background-color: #FACECE;
     margin-top: 60px; }
     body .container-fluid .footerBootstrap .footerBootstrap__inicioFooter {
       display: flex;
@@ -155,7 +162,8 @@ body {
       body .container-fluid .footerBootstrap .footerBootstrap__itemFooter .footerBootstrap__itemFooter--tituloItem {
         padding-top: 10px;
         padding-bottom: 10px;
-        font-weight: 600; }
+        font-weight: 600;
+        color: #C12626; }
       body .container-fluid .footerBootstrap .footerBootstrap__itemFooter .footerBootstrap__itemFooter--enlace {
         color: black;
         text-decoration: underline; }
@@ -163,5 +171,5 @@ body {
     padding: 10px;
     font-size: 15px;
     text-align: center;
-    background-color: #B44141;
-    color: #FFFFFF; }
+    background-color: #F67171;
+    color: black; }
