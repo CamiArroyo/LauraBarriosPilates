@@ -40,10 +40,10 @@ body {
 
     .parallax {
         /* The image used */
-        background-image: url("../assets/img/estudio1.jpg");
+        background-image: url("../assets/img/panoramica.jpg");
 
         /* Set a specific height */
-        height: 400px;
+        height: 450px;
 
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
@@ -109,6 +109,28 @@ body {
             }
         }
 
+        .videoYoutube {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        /* Sección quien_soy */
+
+        .cuadroContenedor {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .cuadroInfo {
+            background-color: $rosado;
+            border: solid 1px $negro;
+            border-radius: 30px;
+            margin: 10px;
+        }
+
         /* Sección servicios_que_se_brindan */
 
         .imgMetodo {
@@ -143,7 +165,8 @@ body {
             font-size: $xsmall;
 
             .tabla__encabezadoTabla {
-                @extend .tabla;
+                border: solid 2px $negro;
+                background-color: $rosado;
                 font-size: $medium;
                 color: $rojoClaro;
                 font-family: 'Merienda One', cursive;
@@ -154,40 +177,56 @@ body {
 
         .telefonoMail {
             display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
+            flex-direction: column;
+
+            .telefonoMail__item {
+                margin-bottom: 10px;
+            }
         }
 
         .redesSociales {
             display: flex;
             flex-direction: row;
-            justify-content: flex-start;
+
+            .redesSociales__item {
+                margin-right: 20px;
+                transition: 1s;
+            }
+
+            .redesSociales__item:hover {
+                transform: scale(1.3);
+            }
         }
 
         form {
             font-size: $xsmall;
-            margin-left: 10px;
-            margin-right: 10px;
 
-            .form-control {
+            .itemForm {
                 margin-top: 10px;
             }
     
             .botones {
-                margin-top: 20px;
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-end;
-            }
-    
-            .btn {
-                padding: 10px;
-                margin: 10px;
-                background-color: $rojoOscuro;
-                border: none;
+
+                .btn {
+                    padding: 10px;
+                    margin: 15px;
+                    background-color: $rojoClaro;
+                    border: none;
+                    transition: 1s;
+                }
+
+                .btn:hover {
+                    transform: scale(1.3);
+                }
             }
         }
 
+        .ubicacionItem {
+            margin-bottom: 15px;
+        }
     }
 
     .container-fluid {
@@ -208,7 +247,7 @@ body {
                     padding-top: 10px;
                     padding-bottom: 10px;
                     font-weight: 600;
-                    color: $rojoOscuro;
+                    color: $negro;
                 }
                 .footerBootstrap__itemFooter--enlace {
                     color: $negro;
