@@ -33,7 +33,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <img src="../assets/img/logoCorto.png" alt="logoCorto" height="40px" weight="30px" class="imagenesJoseph__imagen">
+                    <img src="../assets/img/logoCorto.png" alt="logoCorto" height="40px" weight="30px" class="logoNav--Mobile">
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
@@ -87,7 +87,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="col xs-12 col-lg-6">
+            <div class="col xs-6 col-lg-6">
                 <h2 data-aos="fade-right">Tabla de horarios actual</h2>
                 <table border="1" cellpadding=15px cellspacing=5px class="tabla" data-aos="fade-left">
                     <tr>
@@ -97,36 +97,58 @@
                         <th class="tabla__encabezadoTabla">Viernes</th>
                     </tr>
                     <tr> <!-- Primer turno -->
-                        <td>8:00 a 9:00</td>
-                        <td>8:00 a 9:00</td>
-                        <td>8:00 a 9:00</td>
-                        <td>8:00 a 9:00</td>
+                        <td>8:00hs</td>
+                        <td>8:00hs</td>
+                        <td>8:00hs</td>
+                        <td>8:00hs</td>
                     </tr>
                     <tr> <!-- Segundo turno -->
-                        <td>9:00 a 10:00</td>
-                        <td>9:00 a 10:00</td>
-                        <td>9:00 a 10:00</td>
-                        <td>9:00 a 10:00</td>
+                        <td>9:00hs</td>
+                        <td>9:00hs</td>
+                        <td>9:00hs</td>
+                        <td>9:00hs</td>
                     </tr>
                     <tr> <!-- Tercer turno -->
-                        <td>14:30 a 15:30</td>
-                        <td>14:30 a 15:30</td>
-                        <td>14:30 a 15:30</td>
-                        <td>14:30 a 15:30</td>
+                        <td>14:30hs</td>
+                        <td>14:30hs</td>
+                        <td>14:30hs</td>
+                        <td>14:30hs</td>
                     </tr>
                     <tr> <!-- Cuarto turno -->
-                        <td>19:00 a 20:00</td>
-                        <td>19:00 a 20:00</td>
-                        <td>19:00 a 20:00</td>
-                        <td>19:00 a 20:00</td>
+                        <td>19:00hs</td>
+                        <td>19:00hs</td>
+                        <td>19:00hs</td>
+                        <td>19:00hs</td>
                     </tr>
                     <tr> <!-- Quinto turno -->
-                        <td>20:00 a 21:00</td>
-                        <td>20:00 a 21:00</td>
-                        <td>20:00 a 21:00</td>
-                        <td>20:00 a 21:00</td>
+                        <td>20:00hs</td>
+                        <td>20:00hs</td>
+                        <td>20:00hs</td>
+                        <td>20:00hs</td>
                     </tr>
                 </table>
+                <div class="contenedorTabla">
+                    <table border="1" cellpadding=15px cellspacing=5px class="contenedorTabla__Mobile" data-aos="fade-left">
+                        <tr>
+                            <th class="contenedorTabla__Mobile--encabezadoTabla">Lunes, martes, jueves y viernes</th>
+                        </tr>
+                        <tr> <!-- Primer turno -->
+                            <td>8:00hs a 9:00hs</td>
+                        </tr>
+                        <tr> <!-- Segundo turno -->
+                            <td>9:00hs a 10:00hs</td>
+                        </tr>
+                        <tr> <!-- Tercer turno -->
+                            <td>14:30hs a 15:30hs</td>
+                        </tr>
+                        <tr> <!-- Cuarto turno -->
+                            <td>19:00hs a 20:00hs</td>
+                        </tr>
+                        <tr> <!-- Quinto turno -->
+                            <td>20:00hs a 21:00hs</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
             <div class="col-xs-12 col-lg-6">
                 <h2 data-aos="fade-right">Información importante</h2>
@@ -137,7 +159,14 @@
                 </div>
                 <h2 data-aos="fade-right">Protocolo Covid 19</h2>
                 <div data-aos="fade-left">
-                    <p>(falta)</p>
+                    <p>En cada turno estamos tomando las siguientes medidas:</p>
+                    <ul class="listaContenido">
+                        <li>Alcohol en gel en la entrada del estudio.</li>
+                        <li>Turnos de 45 minutos.</li>
+                        <li>Utilización del barbijo durante toda la clase.</li>
+                        <li>Utilización de una toalla personal por cada alumno.</li>
+                        <li>Ventilación y sanitización de la zona de trabajo entre turno y turno.</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -148,25 +177,21 @@
     <!-- Apertura de footer -->
     <div class="container-fluid">
         <div class="row footerBootstrap">
-            <div class="col-xs-12 col-lg-12 footerBootstrap__inicioFooter">
-                <img src="../assets/img/logo.png" alt="logo" height="200px" width="260px">
-            </div>
-            <div class="col-xs-12 col-lg-1"></div>
-            <div class="col-xs-12 col-lg-2 footerBootstrap__itemFooter">
-                <div class="footerBootstrap__itemFooter--tituloItem">Llamadas y whatsapp:</div>
-                <img src="../assets/img/logoLlamada.png" alt="instagram" height="20px" width="20px">(3564) 683537
-                <div><a href="https://wa.link/wi6bhw" target="_blank"><img src="../assets/img/logoWhatsapp.png" alt="facebook" height="60px" width="60px"></a></div>
+            <div class="col-xs-12 col-lg-3">
+                <img src="../assets/img/logo.png" alt="logo" height="200px" width="260px" class="footerBootstrap__inicioFooter--Mobile">
             </div>
             <div class="col-xs-12 col-lg-2 footerBootstrap__itemFooter">
-                <div class="footerBootstrap__itemFooter--tituloItem">Mail de contacto:</div> 
-                <img src="../assets/img/logoMail.png" alt="instagram" height="20px" width="20px">lalibarrios@gmail.com
+                <div class="footerBootstrap__itemFooter--tituloItem">Llamadas y mail:</div>
+                <div><img src="../assets/img/logoLlamada.png" alt="instagram" height="20px" width="20px">(3564) 683537</div>
+                <div><img src="../assets/img/logoMail.png" alt="instagram" height="20px" width="20px">lalibarrios@gmail.com</div>
             </div>
             <div class="col-xs-12 col-lg-2 footerBootstrap__itemFooter">
                 <div class="footerBootstrap__itemFooter--tituloItem">Formulario de contacto:</div>
                 <a href="../pages/contacto.html#formulario" class="footerBootstrap__itemFooter--enlace">Ir al formulario</p></a>
             </div>
             <div class="col-xs-12 col-lg-2 footerBootstrap__itemFooter">
-                <div class="footerBootstrap__itemFooter--tituloItem">Redes sociales:</div>
+                <div class="footerBootstrap__itemFooter--tituloItem">Whatsapp y redes sociales:</div>
+                <a href="https://wa.link/wi6bhw" target="_blank"><img src="../assets/img/logoWhatsapp.png" alt="facebook" height="60px" width="60px"></a>
                 <a href="https://www.instagram.com/laurabarriospilates/" target="_blank"><img src="../assets/img/logoInstagram.png" alt="instagram" height="60px" width="60px"></a>
                 <a href="https://www.facebook.com/LauraBarriosPilates" target="_blank"><img src="../assets/img/logoFacebook.png" alt="instagram" height="60px" width="60px"></a> 
             </div>

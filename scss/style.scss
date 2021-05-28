@@ -3,6 +3,11 @@
 @import "colores";
 @import "tamanios";
 
+html, body{
+width:100%;
+overflow-x:hidden;
+}
+
 body {
 
     background-image: linear-gradient(to bottom, $fondo, $blanco);
@@ -52,7 +57,7 @@ body {
         background-size: cover;
 
         /* box modeling */
-        margin-bottom:50px;
+        margin-bottom: 50px;
 
         .parallax__tituloSeccion {
             padding-top: 10%;
@@ -85,12 +90,16 @@ body {
         .imagenesJoseph {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
+            margin-top: 10px;
 
-            .imagenesJoseph__imagen {
-                width: 70%;
-                height: 70%;
-                margin: 20px 20px 0px 20px;
+            .imagenesJoseph__imagen{
+                margin: 20px;
+                transition: 1s;
+            }
+
+            .imagenesJoseph__imagen:hover {
+                transform: scale(1.2);
             }
         }
 
@@ -106,6 +115,11 @@ body {
                 word-spacing: 4px;
                 margin: 30px;
                 transform: rotate(8deg);
+                transition: 1s;
+            }
+
+            .beneficiosMetodo__consejo:hover {
+                transform: scale(1.2);
             }
         }
 
@@ -125,10 +139,16 @@ body {
         }
 
         .cuadroInfo {
+            font-size: $xxsmall;
             background-color: $rosado;
             border: solid 1px $negro;
             border-radius: 30px;
-            margin: 10px;
+            margin: 30px;
+            transition: 1s;
+        }
+
+        .cuadroInfo:hover {
+            transform: scale(1.1);
         }
 
         /* Sección servicios_que_se_brindan */
@@ -160,6 +180,7 @@ body {
         /* Sección nuestros_horarios */
 
         .tabla {
+            width: 100%;
             border: solid 2px $negro;
             text-align: center;
             font-size: $xsmall;
@@ -234,12 +255,9 @@ body {
         .footerBootstrap {
             background-color: $rosado;
             margin-top: 60px;
-            .footerBootstrap__inicioFooter {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
+
             .footerBootstrap__itemFooter {
+                margin-top: 25px;
                 font-size: $xsmall;
                 list-style-type: none;
                 font-weight: 400;
@@ -265,6 +283,116 @@ body {
             background-color: $rojoClaro;
             color: $negro;
         }
+    }
+
+    @media only screen and (min-width:768px) {
+
+        /* Sección nuestros_horarios.html */
+
+        .contenedorTabla {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        
+        h1 {
+            font-size: $large;
+            text-align: center;
+        }
+
+        h2, h3 {
+            font-size: $medium;
+            text-align: center;
+        }
+
+        h1, h2, h3, h4, p, .listaContenido, .listaSubtitulo {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        .parallax {
+    
+            /* Set a specific height */
+            height: 200px;
+        }
+
+        /* Navbar */
+
+        .contenedor {
+            .logoNav--Mobile {
+                display: none;
+            }
+        }
+
+        /* Sección index.html */
+
+        .imagenesJoseph__imagen--Mobile {
+            display: none;
+        }
+
+        /* Sección servicios_que_se_brindan.html */
+
+        .imgMetodo {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 20px 0px;
+            justify-content: space-around;
+
+            .imgMetodo__imgServicio, .imgMetodo__imgCircuito {
+                margin-bottom: 10px;
+            }
+
+            .imgMetodo__imgServicio--Mobile {
+                display: none;
+            }
+        }
+
+        /* Sección nuestros_horarios.html */
+
+        .tabla {
+            display: none;
+        }
+
+        .contenedorTabla {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .contenedorTabla__Mobile {
+                width: 80%;
+                border: solid 2px $negro;
+                text-align: center;
+                font-size: $xsmall;
+    
+                .contenedorTabla__Mobile--encabezadoTabla {
+                    border: solid 2px $negro;
+                    background-color: $rosado;
+                    font-size: $medium;
+                    color: $rojoClaro;
+                    font-family: 'Merienda One', cursive;
+                }
+            }
+        }
+
+        /* Footer */
+        
+        .container-fluid {
+            
+            .footerBootstrap {
+                text-align: center;
+                .footerBootstrap__inicioFooter--Mobile {
+                    height: 150px; 
+                    width: 210px;
+                }
+                .footerBootstrap__itemFooter {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+
     }
 
 }
