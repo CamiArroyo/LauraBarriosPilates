@@ -116,20 +116,30 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: center; }
+    body .container .lauraBarrios {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      body .container .lauraBarrios .lauraBarrios__Imagen {
+        margin-top: 30px;
+        transition: 1s; }
+      body .container .lauraBarrios .lauraBarrios__Imagen:hover {
+        transform: scale(1.1); }
     body .container .cuadroContenedor {
       display: flex;
       flex-direction: row;
       justify-content: center;
       margin-top: 50px; }
-    body .container .cuadroInfo {
-      font-size: 14px;
-      background-color: #FACECE;
-      border: solid 1px black;
-      border-radius: 30px;
-      margin: 30px;
-      transition: 1s; }
-    body .container .cuadroInfo:hover {
-      transform: scale(1.1); }
+      body .container .cuadroContenedor .cuadroContenedor__cuadroInfo {
+        background-color: #FACECE;
+        border: solid 1px black;
+        border-radius: 30px;
+        margin: 20px 30px;
+        transition: 1s; }
+        body .container .cuadroContenedor .cuadroContenedor__cuadroInfo .cuadroContenedor__cuadroInfo--titulo {
+          text-align: center; }
+      body .container .cuadroContenedor .cuadroContenedor__cuadroInfo:hover {
+        transform: scale(1.1); }
     body .container .imgMetodo {
       display: flex;
       flex-direction: row;
@@ -204,19 +214,20 @@ body {
         text-decoration: underline; }
   body .contenedor .hechoPor {
     padding: 10px;
-    font-size: 14px;
+    font-size: 10px;
     text-align: center;
     background-color: #F67171;
     color: black; }
   @media only screen and (min-width: 768px) {
     body {
       /* Sección nuestros_horarios.html */ }
-      body .contenedorTabla {
+      body .tablaMobile {
         display: none; } }
   @media only screen and (max-width: 768px) {
     body {
       /* Navbar */
       /* Sección index.html */
+      /* Sección quien_soy.html */
       /* Sección servicios_que_se_brindan.html */
       /* Sección nuestros_horarios.html */
       /* Footer */ }
@@ -231,11 +242,16 @@ body {
         margin-left: 0px; }
       body .parallax {
         /* Set a specific height */
-        height: 200px; }
+        height: 200px;
+        /* box modeling */
+        margin-bottom: 30px; }
       body .contenedor .logoNav--Mobile {
         display: none; }
       body .imagenesJoseph__imagen--Mobile {
         display: none; }
+      body .lauraBarrios__Imagen {
+        height: 412px;
+        width: 321px; }
       body .imgMetodo {
         display: flex;
         flex-direction: column;
@@ -244,20 +260,20 @@ body {
         justify-content: space-around; }
         body .imgMetodo .imgMetodo__imgServicio, body .imgMetodo .imgMetodo__imgCircuito {
           margin-bottom: 10px; }
-        body .imgMetodo .imgMetodo__imgServicio--Mobile {
-          display: none; }
+          body .imgMetodo .imgMetodo__imgServicio .imgMetodo__imgServicio--Mobile, body .imgMetodo .imgMetodo__imgCircuito .imgMetodo__imgServicio--Mobile {
+            display: none; }
       body .tabla {
         display: none; }
-      body .contenedorTabla {
+      body .tablaMobile {
         display: flex;
         flex-direction: row;
         justify-content: center; }
-        body .contenedorTabla .contenedorTabla__Mobile {
+        body .tablaMobile .tablaMobile__tabla {
           width: 80%;
           border: solid 2px black;
           text-align: center;
           font-size: 16px; }
-          body .contenedorTabla .contenedorTabla__Mobile .contenedorTabla__Mobile--encabezadoTabla {
+          body .tablaMobile .tablaMobile__tabla .tablaMobile__tabla--encabezadoTabla {
             border: solid 2px black;
             background-color: #FACECE;
             font-size: 25px;

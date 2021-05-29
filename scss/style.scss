@@ -131,25 +131,44 @@ body {
 
         /* Sección quien_soy */
 
+        .lauraBarrios {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .lauraBarrios__Imagen {
+                margin-top: 30px;
+                transition: 1s;
+            }
+    
+            .lauraBarrios__Imagen:hover {
+                transform: scale(1.1);
+            }
+        }
+
         .cuadroContenedor {
             display: flex;
             flex-direction: row;
             justify-content: center;
             margin-top: 50px;
+
+            .cuadroContenedor__cuadroInfo {
+                background-color: $rosado;
+                border: solid 1px $negro;
+                border-radius: 30px;
+                margin: 20px 30px;
+                transition: 1s;
+
+                .cuadroContenedor__cuadroInfo--titulo {
+                    text-align: center;
+                }
+            }
+    
+            .cuadroContenedor__cuadroInfo:hover {
+                transform: scale(1.1);
+            }
         }
 
-        .cuadroInfo {
-            font-size: $xxsmall;
-            background-color: $rosado;
-            border: solid 1px $negro;
-            border-radius: 30px;
-            margin: 30px;
-            transition: 1s;
-        }
-
-        .cuadroInfo:hover {
-            transform: scale(1.1);
-        }
 
         /* Sección servicios_que_se_brindan */
 
@@ -289,7 +308,7 @@ body {
 
         /* Sección nuestros_horarios.html */
 
-        .contenedorTabla {
+        .tablaMobile {
             display: none;
         }
     }
@@ -312,9 +331,11 @@ body {
         }
 
         .parallax {
-    
             /* Set a specific height */
             height: 200px;
+
+            /* box modeling */
+            margin-bottom: 30px;
         }
 
         /* Navbar */
@@ -331,6 +352,13 @@ body {
             display: none;
         }
 
+        /* Sección quien_soy.html */
+
+        .lauraBarrios__Imagen {
+            height: 412px;
+            width: 321px;
+        }
+
         /* Sección servicios_que_se_brindan.html */
 
         .imgMetodo {
@@ -342,10 +370,10 @@ body {
 
             .imgMetodo__imgServicio, .imgMetodo__imgCircuito {
                 margin-bottom: 10px;
-            }
 
-            .imgMetodo__imgServicio--Mobile {
-                display: none;
+                .imgMetodo__imgServicio--Mobile {
+                    display: none;
+                }
             }
         }
 
@@ -355,18 +383,18 @@ body {
             display: none;
         }
 
-        .contenedorTabla {
+        .tablaMobile {
             display: flex;
             flex-direction: row;
             justify-content: center;
 
-            .contenedorTabla__Mobile {
+            .tablaMobile__tabla {
                 width: 80%;
                 border: solid 2px $negro;
                 text-align: center;
                 font-size: $xsmall;
     
-                .contenedorTabla__Mobile--encabezadoTabla {
+                .tablaMobile__tabla--encabezadoTabla {
                     border: solid 2px $negro;
                     background-color: $rosado;
                     font-size: $medium;
