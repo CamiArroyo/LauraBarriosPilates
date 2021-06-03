@@ -19,25 +19,45 @@ body {
         font-weight: $grosor;
         margin: $margin;
     }
-    h1 {@include etiquetas($rojoOscuro, $xlarge, center, 700, 30px); 
+    h1 {@include etiquetas($rojoOscuro, $xlarge, center, 900, 0px); 
         font-family: 'Merienda One', cursive;}
-    h2 {@include etiquetas($rojoOscuro, $large, left, 550, 20px);
+    h2 {@include etiquetas($rojoOscuro, $large, center, 600, 30px 0px);
         font-family: 'Merienda One', cursive;}
-    h3 {@include etiquetas($rojoClaro, $medium, left, 550, 25px 0px 0px 20px);
+    h3 {@include etiquetas($rojoClaro, $medium, left, 550, 30px 0px);
         font-family: 'Merienda One', cursive;}
     h4 {@include etiquetas($rojoClaro, $small, left, 550, 20px 0px)}
-    p {@include etiquetas($negro, $xsmall, justify, 400, 10px)}
-    p {text-indent: 20px;}
+    p {@include etiquetas($negro, $xsmall, justify, 400, 10px 0px)}
+    p {text-indent: 15px;}
 
-    @mixin listas ($color, $tamanio, $grosor, $estiloLista, $margin){
+    @mixin listas ($color, $tamanio, $grosor, $estiloLista, $margin, $padding){
         color: $color;
         font-size: $tamanio;
         font-weight: $grosor;
         list-style-type: $estiloLista;
         margin: $margin;
+        padding: $padding;
     }
-    .listaSubtitulo {@include listas($rojoClaro, $small, 500, circle, 0px)}
-    .listaContenido { @include listas($negro, $xsmall, 400, circle, 10px 0px)}
+    .listaSubtitulo {@include listas($rojoClaro, $small, 550, none, 0px, 0px)}
+    .listaContenido1 { @include listas($negro, $xsmall, 400, none, 0px, 0px)}
+    .listaContenido2 { @include listas($negro, $xsmall, 400, none, 0px, 0px)}
+
+    .listaSubtitulo::before {
+        content: "\27A2";
+        color: $rojoClaro;
+        padding-right: 5px;
+    }
+
+    .listaContenido1::before {
+        content: "\276F";
+        color: $rojoOscuro;
+        padding-right: 5px;
+    }
+
+    .listaContenido2::before {
+        content: "\276F";
+        color: $rojoClaro;
+        padding-right: 5px;
+    }
 
     .resaltado {
         font-weight: 650;
@@ -62,6 +82,11 @@ body {
         .parallax__tituloSeccion {
             padding-top: 10%;
             text-align: center;
+
+            .parallax__tituloSeccion--titulo {
+                margin-top: 30px;
+                text-shadow: 2px 2px $blanco;
+            }
         }
     }
 
@@ -82,51 +107,47 @@ body {
 
         /* Sección index */
 
-        .caractIndex {
-            font-size: $small;
-            text-align: center;
+        .tituloSitio {
+            margin: 70px 0px 30px 0px;
         }
 
         .imagenesJoseph {
             display: flex;
             flex-direction: row;
             justify-content: center;
-            margin-top: 10px;
 
             .imagenesJoseph__imagen{
-                margin: 20px;
+                margin: 20px 10px;
                 transition: 1s;
             }
 
             .imagenesJoseph__imagen:hover {
-                transform: scale(1.2);
+                transform: scale(1.1);
             }
         }
 
-        .beneficiosMetodo {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-end;
+        .beneficiosPilates {
+            margin-bottom: 20px;
+        }
 
-            .beneficiosMetodo__consejo {
-                background-color: $rojoClaro;
-                text-align: center;
-                letter-spacing: 2px;
-                word-spacing: 4px;
-                margin: 30px;
-                transform: rotate(8deg);
-                transition: 1s;
-            }
+        .beneficiosConsejo {
+            background-color: $rojoClaro;
+            text-align: center;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+            transform: rotate(8deg);
+            transition: 1s;
+        }
 
-            .beneficiosMetodo__consejo:hover {
-                transform: scale(1.2);
-            }
+        .beneficiosConsejo:hover {
+            transform: scale(1.2);
         }
 
         .videoYoutube {
             display: flex;
             flex-direction: row;
             justify-content: center;
+            margin-top: 20px;
         }
 
         /* Sección quien_soy */
@@ -150,17 +171,28 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: center;
-            margin-top: 50px;
+            margin-top: 30px;
 
             .cuadroContenedor__cuadroInfo {
                 background-color: $rosado;
                 border: solid 1px $negro;
                 border-radius: 30px;
-                margin: 20px 30px;
+                padding: 10px;
+                margin: 30px;
                 transition: 1s;
+
+                .cuadroContenedor__cuadroInfo--imagen {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin: 10px 0px;
+                }
 
                 .cuadroContenedor__cuadroInfo--titulo {
                     text-align: center;
+                    font-size: $small;
+                    color: $rojoOscuro;
+                    margin: 10px 0px;
                 }
             }
     
@@ -169,29 +201,20 @@ body {
             }
         }
 
-
         /* Sección servicios_que_se_brindan */
 
         .imgMetodo {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            margin: 20px 0px;
             justify-content: space-around;
+            margin: 20px 0px;
 
             .imgMetodo__imgServicio {
                 transition: 1s;
             }
     
             .imgMetodo__imgServicio:hover {
-                transform: scale(1.5);
-            }
-    
-            .imgMetodo__imgCircuito {
-                transition: 1s;
-            }
-    
-            .imgMetodo__imgCircuito:hover {
                 transform: scale(1.5);
             }
         }
@@ -203,30 +226,28 @@ body {
             border: solid 2px $negro;
             text-align: center;
             font-size: $xsmall;
-
-            .tabla__encabezadoTabla {
+    
+            .tabla__encabezado {
                 border: solid 2px $negro;
                 background-color: $rosado;
-                font-size: $medium;
-                color: $rojoClaro;
-                font-family: 'Merienda One', cursive;
+
+                .tabla__encabezado--titulo {
+                    text-align: center;
+                    margin: 0px;
+                }
             }
         }
 
         /* Sección contacto */
 
-        .telefonoMail {
-            display: flex;
-            flex-direction: column;
-
-            .telefonoMail__item {
-                margin-bottom: 10px;
-            }
+        .telefonoMail__item {
+            margin-bottom: 10px;
         }
 
         .redesSociales {
             display: flex;
             flex-direction: row;
+            justify-content: flex-start;
 
             .redesSociales__item {
                 margin-right: 20px;
@@ -264,8 +285,8 @@ body {
             }
         }
 
-        .ubicacionItem {
-            margin-bottom: 15px;
+        .ubicacion__item {
+            margin-bottom: 10px;
         }
     }
 
@@ -274,24 +295,27 @@ body {
         .footerBootstrap {
             background-color: $rosado;
             margin-top: 60px;
+            padding-top: 30px;
+            padding-bottom: 10px;
 
+            .footerBootstrap__imagen {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
             .footerBootstrap__itemFooter {
-                margin-top: 25px;
-                font-size: $xsmall;
-                list-style-type: none;
-                font-weight: 400;
-                .footerBootstrap__itemFooter--tituloItem {
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    font-weight: 600;
-                    color: $negro;
-                }
-                .footerBootstrap__itemFooter--enlace {
-                    color: $negro;
-                    text-decoration: underline;
-                }
+                text-indent: 0px;
+                font-weight: 550;
+            }
+            .footerBootstrap__contenido {
+                text-indent: 0px;
+            }
+            .footerBootstrap__enlace {
+                color: $negro;
+                text-decoration: underline;
             }
         }
+
     }
 
     .contenedor {
@@ -323,85 +347,66 @@ body {
         h2, h3 {
             font-size: $medium;
             text-align: center;
+            margin: 20px 0px;
         }
 
-        h1, h2, h3, h4, p, .listaContenido, .listaSubtitulo {
-            margin-right: 0px;
-            margin-left: 0px;
+        .listaSubtitulo {
+            text-align: center;
         }
 
         .parallax {
-            /* Set a specific height */
-            height: 200px;
-
-            /* box modeling */
+            height: 250px;
             margin-bottom: 30px;
+
+            .parallax__tituloSeccion {
+                padding-top: 15%;
+            }
         }
 
         /* Navbar */
 
         .contenedor {
-            .logoNav--Mobile {
+            
+            .logoNav__mobile {
                 display: none;
             }
         }
 
         /* Sección index.html */
 
-        .imagenesJoseph__imagen--Mobile {
+        .imagenesJoseph__imagen--MobileNo {
             display: none;
+        }
+
+        .beneficiosConsejo {
+            margin: 30px 30px 10px 30px;
         }
 
         /* Sección quien_soy.html */
 
         .lauraBarrios__Imagen {
-            height: 412px;
-            width: 321px;
+            height: 402px;
+            width: 311px;
         }
 
         /* Sección servicios_que_se_brindan.html */
 
-        .imgMetodo {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            margin: 20px 0px;
-            justify-content: space-around;
+        .imgMetodo__imgServicio {
+            margin-bottom: 10px;
+        }
 
-            .imgMetodo__imgServicio, .imgMetodo__imgCircuito {
-                margin-bottom: 10px;
-
-                .imgMetodo__imgServicio--Mobile {
-                    display: none;
-                }
-            }
+        .imgMetodo__imgServicio--MobileNo {
+            display: none;
         }
 
         /* Sección nuestros_horarios.html */
 
-        .tabla {
+        .tablaPC {
             display: none;
         }
 
         .tablaMobile {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-
-            .tablaMobile__tabla {
-                width: 80%;
-                border: solid 2px $negro;
-                text-align: center;
-                font-size: $xsmall;
-    
-                .tablaMobile__tabla--encabezadoTabla {
-                    border: solid 2px $negro;
-                    background-color: $rosado;
-                    font-size: $medium;
-                    color: $rojoClaro;
-                    font-family: 'Merienda One', cursive;
-                }
-            }
+            margin: 0px 30px 10px 30px;
         }
 
         /* Footer */
@@ -409,17 +414,25 @@ body {
         .container-fluid {
             
             .footerBootstrap {
+                padding-top: 10px;
                 text-align: center;
-                .footerBootstrap__inicioFooter--Mobile {
+
+                .footerBootstrap__imagen--mobile{
                     height: 150px; 
                     width: 210px;
                 }
+
                 .footerBootstrap__itemFooter {
-                    margin-top: 10px;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+
+                .footerBootstrap__contenido {
+                    text-align: center;
+                    margin-bottom: 0px;
                 }
             }
         }
-
 
     }
 

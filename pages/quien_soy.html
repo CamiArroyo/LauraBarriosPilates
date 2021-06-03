@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
-    
     <!-- Título -->
     <title>Instructora Laura Barrios</title>
     <!-- SEO -->
@@ -20,6 +20,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Importación del archivo CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
+
 </head>
 
 <body>
@@ -33,7 +34,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <img src="../assets/img/logoCorto.png" alt="logoCorto" height="40px" weight="30px" class="logoNav--Mobile">
+                    <img src="../assets/img/logoCorto.png" alt="logoCorto" height="40px" weight="30px" class="logoNav__mobile">
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
@@ -56,7 +57,7 @@
                             <a class="dropdown-item" href="../pages/servicios_que_se_brindan.html#circuito">Trabajo en
                                 circuito</a>
                             <a class="dropdown-item"
-                                href="../pages/servicios_que_se_brindan.html#eferodinamia">Eferodinamia</a>
+                                href="../pages/servicios_que_se_brindan.html#eferodinamia">Esferodinamia</a>
                             <a class="dropdown-item" href="../pages/servicios_que_se_brindan.html#plataforma">Plataforma
                                 vibratoria</a>
                         </div>
@@ -74,23 +75,20 @@
     <!-- Cierre de nav -->
 
     <!-- Apertura de slider -->
-
     <div class="parallax">
         <div class="parallax__tituloSeccion">
             <h1 data-aos="fade-down"
                 data-aos-easing="linear"
-                data-aos-duration="1500">Quién soy</h1>
+                data-aos-duration="1500" class="parallax__tituloSeccion--titulo">Quién soy</h1>
         </div>
     </div>
-
     <!-- Cierre de slider -->
     
     <!-- Apertura de section -->
     <div class="container">
-
         <div class="row">
             <div class="col-xs-12 col-lg-8">
-                <h2 data-aos="fade-right">Camino profesional</h2>
+                <h2 data-aos="fade-right">Instructora Laura Barrios</h2>
                 <div data-aos="fade-left">
                     <p>Comencé a estudiar danza a los 5 años y nunca más dejé el camino de la salud y el movimiento.</p>
                     <p>En el año 1988 inicié mis estudios universitarios en la Universidad Nacional de Córdoba y me recibí de <span class="resaltado">Fonoaudióloga</span>.</p>
@@ -104,54 +102,56 @@
                 <img src="../assets/img/laura.jpg" alt="laura" width="351px" height="442px" data-aos="fade-left" class="lauraBarrios__Imagen">
             </div>   
         </div>
-        <div class="row cuadroContenedor" data-aos="fade-left">
-            <div class="col-xs-12 col-lg-3 cuadroContenedor__cuadroInfo">
-                <span><h3 class="cuadroContenedor__cuadroInfo--titulo"><img src="../assets/img/logoPilates.png" alt="logo" height="50px" width="50px">Instructora de Pilates</h3></span>
-                <p>Identificación de los músculos que se quiere trabajar.</p>
-                <p>Explicación correcta y clara de los ejercicios y posturas.</p>
-                <p>Trabajo según las condiciones y necesidades de los alumnos.</p>
+        <div class="row cuadroContenedor">
+            <div class="col-xs-12 col-lg-3 cuadroContenedor__cuadroInfo" data-aos="fade-left">
+                <div class="cuadroContenedor__cuadroInfo--imagen"><img src="../assets/img/logoPilates.png" alt="logo" height="80px" width="80px"></div>
+                <h3 class="cuadroContenedor__cuadroInfo--titulo">Instructora de Pilates</h3>
+                <ul class="listaContenido1">Identificación de los músculos que se quiere trabajar.</ul>
+                <ul class="listaContenido1">Explicación correcta y clara de los ejercicios y posturas.</ul>
+                <ul class="listaContenido1">Trabajo según las condiciones y necesidades del alumno.</ul>
             </div>
-            <div class="col-xs-12 col-lg-3 cuadroContenedor__cuadroInfo">
-                <span><h3 class="cuadroContenedor__cuadroInfo--titulo"><img src="../assets/img/logoYoga.png" alt="logo" height="50px" width="50px">Instructora de Yoga</h3></span>
-                <p>Mejora en la salud física y mental de las personas.</p>
-                <p>Técnicas de respiración, relajación y meditación.</p>
-                <p>Aumento progresivo de la flexibilidad y alivio del estrés.</p>
+            <div class="col-xs-12 col-lg-3 cuadroContenedor__cuadroInfo" data-aos="fade-left">
+                <div class="cuadroContenedor__cuadroInfo--imagen"><img src="../assets/img/logoYoga.png" alt="logo" height="80px" width="80px"></div>
+                <h3 class="cuadroContenedor__cuadroInfo--titulo">Instructora de Yoga</h3>
+                <ul class="listaContenido1">Mejora en la salud física y mental de las personas.</ul>
+                <ul class="listaContenido1">Técnicas de respiración, relajación y meditación.</ul>
+                <ul class="listaContenido1">Aumento progresivo de la flexibilidad y alivio del estrés.</ul>
             </div>
-            <div class="col-xs-12 col-lg-3 cuadroContenedor__cuadroInfo">
-                <span><h3 class="cuadroContenedor__cuadroInfo--titulo"><img src="../assets/img/logoPersonal.png" alt="logo" height="50px" width="50px">Personal Trainer</h3></span>
-                <p>Planificación de un programa de entrenamiento personalizado.</p>
-                <p>Trabajo en base a los objetivos que se desean.</p>
-                <p>Musculación, aeróbica, y fitness. Supervisión constante.</p>
+            <div class="col-xs-12 col-lg-3 cuadroContenedor__cuadroInfo" data-aos="fade-left">
+                <div class="cuadroContenedor__cuadroInfo--imagen"><img src="../assets/img/logoPersonal.png" alt="logo" height="80px" width="80px"></div>
+                <h3 class="cuadroContenedor__cuadroInfo--titulo">Personal Trainer</h3>
+                <ul class="listaContenido1">Planificación de un programa de entrenamiento personalizado.</ul>
+                <ul class="listaContenido1">Trabajo en base a los objetivos que se desean.</ul>
+                <ul class="listaContenido1">Musculación, aeróbica, y fitness. Supervisión constante.</ul>
             </div>
         </div>
-
     </div>
     <!-- Cierre de section -->
 
     <!-- Apertura de footer -->
     <div class="container-fluid">
         <div class="row footerBootstrap">
-            <div class="col-xs-12 col-lg-3">
-                <img src="../assets/img/logo.png" alt="logo" height="200px" width="260px" class="footerBootstrap__inicioFooter--Mobile">
+            <div class="col-xs-12 col-lg-3 footerBootstrap__imagen">
+                <img src="../assets/img/logo.png" alt="logo" height="160px" width="222px" class="footerBootstrap__imagen--mobile">
             </div>
-            <div class="col-xs-12 col-lg-2 footerBootstrap__itemFooter">
-                <div class="footerBootstrap__itemFooter--tituloItem">Llamadas y mail:</div>
-                <div><img src="../assets/img/logoLlamada.png" alt="instagram" height="20px" width="20px">(3564) 683537</div>
-                <div><img src="../assets/img/logoMail.png" alt="instagram" height="20px" width="20px">lalibarrios@gmail.com</div>
+            <div class="col-xs-12 col-lg-2">
+                <p class="footerBootstrap__itemFooter">Llamadas y mail:</p>
+                <p class="footerBootstrap__contenido"><img src="../assets/img/logoLlamada.png" alt="telefono" height="20px" width="20px">(3564) 683537</p>
+                <p class="footerBootstrap__contenido"><img src="../assets/img/logoMail.png" alt="email" height="20px" width="20px">lalibarrios@gmail.com</p>
             </div>
-            <div class="col-xs-12 col-lg-2 footerBootstrap__itemFooter">
-                <div class="footerBootstrap__itemFooter--tituloItem">Formulario de contacto:</div>
-                <a href="../pages/contacto.html#formulario" class="footerBootstrap__itemFooter--enlace">Ir al formulario</p></a>
+            <div class="col-xs-12 col-lg-2">
+                <p class="footerBootstrap__itemFooter">Formulario de contacto:</p>
+                <a href="../pages/contacto.html#formulario" class="footerBootstrap__enlace">Ir al formulario</a>
             </div>
-            <div class="col-xs-12 col-lg-2 footerBootstrap__itemFooter">
-                <div class="footerBootstrap__itemFooter--tituloItem">Whatsapp y redes sociales:</div>
-                <a href="https://wa.link/wi6bhw" target="_blank"><img src="../assets/img/logoWhatsapp.png" alt="facebook" height="60px" width="60px"></a>
+            <div class="col-xs-12 col-lg-2">
+                <p class="footerBootstrap__itemFooter">Whatsapp y redes sociales:</p>
+                <a href="https://wa.link/wi6bhw" target="_blank"><img src="../assets/img/logoWhatsapp.png" alt="whatsapp" height="60px" width="60px"></a>
                 <a href="https://www.instagram.com/laurabarriospilates/" target="_blank"><img src="../assets/img/logoInstagram.png" alt="instagram" height="60px" width="60px"></a>
-                <a href="https://www.facebook.com/LauraBarriosPilates" target="_blank"><img src="../assets/img/logoFacebook.png" alt="instagram" height="60px" width="60px"></a> 
+                <a href="https://www.facebook.com/LauraBarriosPilates" target="_blank"><img src="../assets/img/logoFacebook.png" alt="facebook" height="60px" width="60px"></a> 
             </div>
-            <div class="col-xs-12 col-lg-3 footerBootstrap__itemFooter">
-                <div class="footerBootstrap__itemFooter--tituloItem">Ubicación:</div> 
-                <img src="../assets/img/logoUbicacion.png" alt="instagram" height="20px" width="20px">Belgrano 576 - Devoto, Córdoba
+            <div class="col-xs-12 col-lg-3">
+                <p class="footerBootstrap__itemFooter">Ubicación:</p> 
+                <p class="footerBootstrap__contenido"><img src="../assets/img/logoUbicacion.png" alt="ubicacion" height="20px" width="20px">Belgrano 576 - Devoto, Córdoba</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1204.0123535678001!2d-62.30845347820626!3d-31.401416947347734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cb336897cd5ba1%3A0xda29b5f929a010f7!2sLaura%20Barrios%20Pilates!5e0!3m2!1ses-419!2sar!4v1617289223001!5m2!1ses-419!2sar" width="250" height="60" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
             </div>
         </div>
