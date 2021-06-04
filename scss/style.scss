@@ -135,6 +135,7 @@ body {
             text-align: center;
             letter-spacing: 2px;
             word-spacing: 4px;
+            margin: 20px 0px 10px 0px;
             transform: rotate(8deg);
             transition: 1s;
         }
@@ -206,8 +207,7 @@ body {
         .imgMetodo {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
             margin: 20px 0px;
 
             .imgMetodo__imgServicio {
@@ -335,6 +335,7 @@ body {
         .tablaMobile {
             display: none;
         }
+
     }
 
     @media only screen and (max-width:768px) {
@@ -355,13 +356,21 @@ body {
         }
 
         .parallax {
+
+            background-image: url("../assets/img/panoramicaMobile.jpg");
+
             height: 250px;
             margin-bottom: 30px;
 
             .parallax__tituloSeccion {
-                padding-top: 15%;
+                padding-top: 10%;
+    
+                .parallax__tituloSeccion--titulo {
+                    margin-top: 15%;
+                }
             }
         }
+
 
         /* Navbar */
 
@@ -372,41 +381,73 @@ body {
             }
         }
 
-        /* Sección index.html */
+        .container {
 
-        .imagenesJoseph__imagen--MobileNo {
-            display: none;
-        }
+            /* Sección index.html */
 
-        .beneficiosConsejo {
-            margin: 30px 30px 10px 30px;
-        }
+            .imagenesJoseph__imagen--MobileNo {
+                display: none;
+            }
 
-        /* Sección quien_soy.html */
+            .beneficiosConsejo {
+                margin: 40px 30px 10px 30px;
+            }
 
-        .lauraBarrios__Imagen {
-            height: 402px;
-            width: 311px;
-        }
+            /* Sección quien_soy.html */
 
-        /* Sección servicios_que_se_brindan.html */
+            .lauraBarrios__Imagen {
+                height: 402px;
+                width: 311px;
+            }
 
-        .imgMetodo__imgServicio {
-            margin-bottom: 10px;
-        }
+            /* Sección servicios_que_se_brindan.html */
 
-        .imgMetodo__imgServicio--MobileNo {
-            display: none;
-        }
+            .imgMetodo {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px 0px;
+            }
 
-        /* Sección nuestros_horarios.html */
+            .imgMetodo__imgServicio {
+                margin-bottom: 10px;
+            }
 
-        .tablaPC {
-            display: none;
-        }
+            .imgMetodo__imgServicio--MobileNo {
+                display: none;
+            }
 
-        .tablaMobile {
-            margin: 0px 30px 10px 30px;
+            /* Sección nuestros_horarios.html */
+
+            .tablaPC {
+                display: none;
+            }
+
+            .tablaMobile {
+                margin: 0px 30px 10px 30px;
+            }
+
+            /* Sección contacto.html */
+
+            .redesSociales {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                .redesSociales__item {
+                    margin-right: 0px;
+                    margin: 10px;
+                }
+            }
+
+            form {
+                .botones {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+            }
         }
 
         /* Footer */

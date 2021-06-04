@@ -127,6 +127,7 @@ body {
       text-align: center;
       letter-spacing: 2px;
       word-spacing: 4px;
+      margin: 20px 0px 10px 0px;
       transform: rotate(8deg);
       transition: 1s; }
     body .container .beneficiosConsejo:hover {
@@ -172,8 +173,7 @@ body {
     body .container .imgMetodo {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
       margin: 20px 0px; }
       body .container .imgMetodo .imgMetodo__imgServicio {
         transition: 1s; }
@@ -250,10 +250,6 @@ body {
   @media only screen and (max-width: 768px) {
     body {
       /* Navbar */
-      /* Sección index.html */
-      /* Sección quien_soy.html */
-      /* Sección servicios_que_se_brindan.html */
-      /* Sección nuestros_horarios.html */
       /* Footer */ }
       body h1 {
         font-size: 34px;
@@ -265,27 +261,53 @@ body {
       body .listaSubtitulo {
         text-align: center; }
       body .parallax {
+        background-image: url("../assets/img/panoramicaMobile.jpg");
         height: 250px;
         margin-bottom: 30px; }
         body .parallax .parallax__tituloSeccion {
-          padding-top: 15%; }
+          padding-top: 10%; }
+          body .parallax .parallax__tituloSeccion .parallax__tituloSeccion--titulo {
+            margin-top: 15%; }
       body .contenedor .logoNav__mobile {
         display: none; }
-      body .imagenesJoseph__imagen--MobileNo {
-        display: none; }
-      body .beneficiosConsejo {
-        margin: 30px 30px 10px 30px; }
-      body .lauraBarrios__Imagen {
-        height: 402px;
-        width: 311px; }
-      body .imgMetodo__imgServicio {
-        margin-bottom: 10px; }
-      body .imgMetodo__imgServicio--MobileNo {
-        display: none; }
-      body .tablaPC {
-        display: none; }
-      body .tablaMobile {
-        margin: 0px 30px 10px 30px; }
+      body .container {
+        /* Sección index.html */
+        /* Sección quien_soy.html */
+        /* Sección servicios_que_se_brindan.html */
+        /* Sección nuestros_horarios.html */
+        /* Sección contacto.html */ }
+        body .container .imagenesJoseph__imagen--MobileNo {
+          display: none; }
+        body .container .beneficiosConsejo {
+          margin: 40px 30px 10px 30px; }
+        body .container .lauraBarrios__Imagen {
+          height: 402px;
+          width: 311px; }
+        body .container .imgMetodo {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          margin: 20px 0px; }
+        body .container .imgMetodo__imgServicio {
+          margin-bottom: 10px; }
+        body .container .imgMetodo__imgServicio--MobileNo {
+          display: none; }
+        body .container .tablaPC {
+          display: none; }
+        body .container .tablaMobile {
+          margin: 0px 30px 10px 30px; }
+        body .container .redesSociales {
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
+          body .container .redesSociales .redesSociales__item {
+            margin-right: 0px;
+            margin: 10px; }
+        body .container form .botones {
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
       body .container-fluid .footerBootstrap {
         padding-top: 10px;
         text-align: center; }
