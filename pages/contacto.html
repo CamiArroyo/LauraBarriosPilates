@@ -109,10 +109,18 @@
                 <h2 id="formulario" data-aos="fade-right">Nosotros te contactamos</h2>
                 <form action="envia.php" method="post" data-aos="fade-left">
                     <span>Complete el siguiente formulario:</span>
-                    <input type="text" class="itemForm" name="nombre" placeholder="Nombre y apellido" required>
-                    <input type="email" class="itemForm" name="email" placeholder="Email" required>
-                    <input type="text" class="itemForm" name="telefono" placeholder="Teléfono" required>
-                    <textarea name="contenido" rows="3" class="itemForm" placeholder="¿Tenés una preferencia de días y horarios? ¿Tenés algún problema de salud que quieras informar?"></textarea>
+                    <div>
+                        <label for="nombre y apellido">Nombre y Apellido:</label>
+                        <input type="text" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Deja tu mensaje:</label>
+                        <textarea name="message" rows="4"></textarea>
+                    </div>
                     <div class="itemForm botones">
                         <button class="label-form boton" type="submit" value="Enviar">Enviar formulario</button>
                         <button class="label-form boton" type="reset" value="Borrar">Borrar formulario</button>
