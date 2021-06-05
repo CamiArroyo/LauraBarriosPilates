@@ -1,13 +1,14 @@
 ﻿<?php
 $remitente = $_POST['email'];
-$destinatario = 'mari.alfo@hotmail.com'; // en esta línea va el mail del destinatario.
+$destinatario = 'camiarroyo98.1@hotmail.com'; // en esta línea va el mail del destinatario.
 $asunto = 'Laura Barrios Pilates - Consulta desde el sitio web'; // acá se puede modificar el asunto del mail
 if (!$_POST){
 ?>
 
 <?php
 }else{
-    $cuerpo = "Nombre y Apellido: " . $_POST["nombre"] . "\r\n"; 
+    $cuerpo = "Nombre y Apellido: " . $_POST["nombre"] . "\r\n";
+    $cuerpo .= "Email remitente: " . $_POST["email"] . "\r\n"; 
     $cuerpo .= "Teléfono: " . $_POST["telefono"] . "\r\n";
 	$cuerpo .= "Mensaje de solicitud: " . $_POST["contenido"] . "\r\n";
 	//las líneas de arriba definen el contenido del mail. Las palabras que están dentro de $_POST[""] deben coincidir con el "name" de cada campo. 
