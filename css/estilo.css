@@ -204,18 +204,20 @@ body {
     body .container form {
       font-size: 16px; }
       body .container form .itemForm {
+        width: 100%;
         margin-top: 10px; }
       body .container form .botones {
         display: flex;
         flex-direction: row;
         justify-content: flex-end; }
-        body .container form .botones .btn {
+        body .container form .botones .boton {
           padding: 10px;
           margin: 15px;
           background-color: #F67171;
           border: none;
+          border-radius: 5px;
           transition: 1s; }
-        body .container form .botones .btn:hover {
+        body .container form .botones .boton:hover {
           transform: scale(1.3); }
     body .container .ubicacion__item {
       margin-bottom: 10px; }
