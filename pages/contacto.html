@@ -108,19 +108,12 @@
             <div class="col-xs-12 col-lg-6">
                 <h2 id="formulario" data-aos="fade-right">Nosotros te contactamos</h2>
                 <form action="envia.php" method="post" data-aos="fade-left">
-                    <span>Complete el siguiente formulario:</span>
-                    <div>
-                        <label for="nombre y apellido">Nombre y Apellido:</label>
-                        <input type="text" name="nombre" required>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" required>
-                    </div>
-                    <div>
-                        <label for="message">Deja tu mensaje:</label>
-                        <textarea name="message" rows="4"></textarea>
-                    </div>
+                    <label for="nombre" class="itemForm">Nombre y Apellido:</label>
+                    <input type="text" name="nombre" class="itemForm" required>
+                    <label for="email" class="itemForm">Email:</label>
+                    <input type="email" name="email" class="itemForm" required>
+                    <label for="message" class="itemForm">Deja tu mensaje:</label>
+                    <textarea name="message" class="itemForm" rows="3" required></textarea>
                     <div class="itemForm botones">
                         <button class="label-form boton" type="submit" value="Enviar">Enviar formulario</button>
                         <button class="label-form boton" type="reset" value="Borrar">Borrar formulario</button>

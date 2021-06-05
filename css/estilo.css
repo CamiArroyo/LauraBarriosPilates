@@ -206,7 +206,7 @@ body {
       font-size: 16px; }
       body .container form .itemForm {
         width: 100%;
-        margin-top: 10px; }
+        margin-bottom: 5px; }
       body .container form .botones {
         display: flex;
         flex-direction: row;
