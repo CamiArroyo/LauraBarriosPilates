@@ -8,7 +8,8 @@ if (!$_POST){
 <?php
 }else{
 
-    $cuerpo = "Nombre y Apellido: " . $_POST["nombre"] . "\r\n"; 
+    $cuerpo = "Nombre y Apellido: " . $_POST["nombre"] . "\r\n";
+    $cuerpo .= "Teléfono: " . $_POST["telefono"] . "\r\n";  
     $cuerpo .= "Email: " . $_POST["email"] . "\r\n";
         $cuerpo .= "Deja tu mensaje: " . $_POST["message"] . "\r\n";
 	    //las líneas de arriba definen el contenido del mail. Las palabras que están dentro de $_POST[""] deben coincidir con el "name" de cada campo. 
