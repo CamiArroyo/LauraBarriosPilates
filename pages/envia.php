@@ -7,7 +7,6 @@ if (!$_POST){
 
 <?php
 }else{
-	 
     $cuerpo = "Nombre y Apellido: " . $_POST["nombre"] . "\r\n"; 
     $cuerpo .= "Teléfono: " . $_POST["telefono"] . "\r\n";
 	$cuerpo .= "Mensaje de solicitud: " . $_POST["contenido"] . "\r\n";
