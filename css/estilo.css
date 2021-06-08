@@ -7,7 +7,14 @@ html, body {
   overflow-x: hidden; }
 
 body {
-  background-image: linear-gradient(to bottom, #FFDDDD, #FFFFFF); }
+  /* ESTILO GENERAL PARA TODO EL SITIO */
+  background-image: linear-gradient(to bottom, #FFDDDD, #FFFFFF);
+  /* BARRA DE NAVEGACIÓN */
+  /* PARALLAX (en todas las secciones excepto en index.html) */
+  /* SECTION */
+  /* FOOTER */
+  /* MEDIA QUERIE: VISTA EN PC */
+  /* MEDIA QUERIE: VISTA MOBILE */ }
   body h1 {
     color: #C12626;
     font-size: 60px;
@@ -43,6 +50,8 @@ body {
     margin: 10px 0px; }
   body p {
     text-indent: 15px; }
+  body .resaltado {
+    font-weight: 650; }
   body .listaSubtitulo {
     color: #F67171;
     font-size: 18px;
@@ -76,8 +85,13 @@ body {
     content: "\276F";
     color: #F67171;
     padding-right: 5px; }
-  body .resaltado {
-    font-weight: 650; }
+  body .contenedor .navbar {
+    background-color: #FACECE;
+    font-size: 16px; }
+  body .contenedor .dropdown-menu {
+    background-color: #FACECE; }
+    body .contenedor .dropdown-menu .dropdown-item {
+      font-size: 16px; }
   body .parallax {
     /* The image used */
     background-image: url("../assets/img/panoramica.jpg");
@@ -96,19 +110,12 @@ body {
       body .parallax .parallax__tituloSeccion .parallax__tituloSeccion--titulo {
         margin-top: 30px;
         text-shadow: 2px 2px #FFFFFF; }
-  body .contenedor .navbar {
-    background-color: #FACECE;
-    font-size: 16px; }
-    body .contenedor .navbar .dropdown-item {
-      font-size: 16px; }
-  body .contenedor .dropdown-menu {
-    background-color: #FACECE; }
   body .container {
-    /* Sección index */
-    /* Sección quien_soy */
-    /* Sección servicios_que_se_brindan */
-    /* Sección nuestros_horarios */
-    /* Sección contacto */
+    /* Sección index.html */
+    /* Sección quien_soy.html */
+    /* Sección servicios_que_se_brindan.html */
+    /* Sección nuestros_horarios.html */
+    /* Sección contacto.html */
     /* Sección contacto.html , gracias.html */ }
     body .container .tituloSitio {
       margin: 70px 0px 30px 0px; }
@@ -142,10 +149,10 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: center; }
-      body .container .lauraBarrios .lauraBarrios__Imagen {
+      body .container .lauraBarrios .lauraBarrios__imagen {
         margin-top: 30px;
         transition: 1s; }
-      body .container .lauraBarrios .lauraBarrios__Imagen:hover {
+      body .container .lauraBarrios .lauraBarrios__imagen:hover {
         transform: scale(1.1); }
     body .container .cuadroContenedor {
       display: flex;
@@ -263,12 +270,14 @@ body {
   @media only screen and (min-width: 768px) {
     body {
       /* Sección nuestros_horarios.html */ }
-      body .tablaMobile {
+      body .tabla__mobile {
         display: none; } }
   @media only screen and (max-width: 768px) {
     body {
-      /* Navbar */
-      /* Footer */ }
+      /* BARRA DE NAVEGACIÓN */
+      /* PARALLAX */
+      /* SECTION */
+      /* FOOTER */ }
       body h1 {
         font-size: 34px;
         text-align: center; }
@@ -278,6 +287,8 @@ body {
         margin: 20px 0px; }
       body .listaSubtitulo {
         text-align: center; }
+      body .contenedor .logoNav__mobile {
+        display: none; }
       body .parallax {
         background-image: url("../assets/img/panoramicaMobile.jpg");
         height: 250px;
@@ -286,19 +297,17 @@ body {
           padding-top: 10%; }
           body .parallax .parallax__tituloSeccion .parallax__tituloSeccion--titulo {
             margin-top: 15%; }
-      body .contenedor .logoNav__mobile {
-        display: none; }
       body .container {
         /* Sección index.html */
         /* Sección quien_soy.html */
         /* Sección servicios_que_se_brindan.html */
         /* Sección nuestros_horarios.html */
         /* Sección contacto.html */ }
-        body .container .imagenesJoseph__imagen--MobileNo {
+        body .container .imagenesJoseph__imagen--mobileNo {
           display: none; }
         body .container .beneficiosConsejo {
           margin: 40px 30px 10px 30px; }
-        body .container .lauraBarrios__Imagen {
+        body .container .lauraBarrios__imagen {
           height: 402px;
           width: 311px; }
         body .container .imgMetodo {
@@ -309,11 +318,11 @@ body {
           margin: 20px 0px; }
         body .container .imgMetodo__imgServicio {
           margin-bottom: 10px; }
-        body .container .imgMetodo__imgServicio--MobileNo {
+        body .container .imgMetodo__imgServicio--mobileNo {
           display: none; }
-        body .container .tablaPC {
+        body .container .tabla__PC {
           display: none; }
-        body .container .tablaMobile {
+        body .container .tabla__mobile {
           margin: 0px 30px 10px 30px; }
         body .container .redesSociales {
           display: flex;

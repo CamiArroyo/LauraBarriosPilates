@@ -51,7 +51,7 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Servicios que se brindan
                         </a>
-                        <div class="dropdown-menu navBootstrap" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="../pages/servicios_que_se_brindan.html">Todos los
                                 servicios</a>
                             <div class="dropdown-divider"></div>
@@ -79,7 +79,7 @@
     </div>
     <!-- Cierre de nav -->
 
-    <!-- Apertura de slider -->
+    <!-- Apertura de parallax -->
     <div class="parallax">
         <div class="parallax__tituloSeccion">
             <h1 data-aos="fade-down"
@@ -87,7 +87,7 @@
                 data-aos-duration="1500" class="parallax__tituloSeccion--titulo">Medios de contacto</h1>
         </div>
     </div>
-    <!-- Cierre de slider -->
+    <!-- Cierre de parallax -->
     
     <!-- Apertura de section -->
     <div class="container">
@@ -112,8 +112,10 @@
                     <input type="text" name="nombre" class="itemForm" required>
                     <label for="telefono" class="itemForm">Teléfono:</label>
                     <input type="text" name="telefono" class="itemForm" required>
-                    <label for="message" class="itemForm">¿Tenés preferencia por algún horario?:</label>
-                    <textarea name="message" class="itemForm" rows="3"></textarea>
+                    <label for="email" class="itemForm">Email:</label>
+                    <input type="email" name="email" class="itemForm" required>
+                    <label for="message" class="itemForm">¿Tiene preferencia por algún día y horario?:</label>
+                    <textarea name="message" class="itemForm" rows="2"></textarea>
                     <div class="itemForm botones">
                         <button class="label-form boton" type="submit" value="Enviar">Enviar formulario</button>
                         <button class="label-form boton" type="reset" value="Borrar">Borrar formulario</button>

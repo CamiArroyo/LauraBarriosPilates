@@ -10,6 +10,8 @@ overflow-x:hidden;
 
 body {
 
+    /* ESTILO GENERAL PARA TODO EL SITIO */
+
     background-image: linear-gradient(to bottom, $fondo, $blanco);
 
     @mixin etiquetas ($color, $tamanio, $alineacion, $grosor, $margin){
@@ -28,6 +30,10 @@ body {
     h4 {@include etiquetas($rojoClaro, $small, left, 550, 20px 0px)}
     p {@include etiquetas($negro, $xsmall, justify, 400, 10px 0px)}
     p {text-indent: 15px;}
+
+    .resaltado {
+        font-weight: 650;
+    }
 
     @mixin listas ($color, $tamanio, $grosor, $estiloLista, $margin, $padding){
         color: $color;
@@ -59,9 +65,23 @@ body {
         padding-right: 5px;
     }
 
-    .resaltado {
-        font-weight: 650;
+    /* BARRA DE NAVEGACIÓN */
+
+    .contenedor {
+        .navbar {
+            background-color: $rosado;
+            font-size: $xsmall;
+        }
+        .dropdown-menu {
+            background-color: $rosado;
+
+            .dropdown-item {
+                font-size: $xsmall;
+            }
+        }
     }
+
+    /* PARALLAX (en todas las secciones excepto en index.html) */
 
     .parallax {
         /* The image used */
@@ -90,22 +110,11 @@ body {
         }
     }
 
-    .contenedor {
-        .navbar {
-            background-color: $rosado;
-            font-size: $xsmall;
-            .dropdown-item {
-                font-size: $xsmall;
-            }
-        }
-        .dropdown-menu {
-            background-color: $rosado;
-        }
-    }
+    /* SECTION */
 
     .container{
 
-        /* Sección index */
+        /* Sección index.html */
 
         .tituloSitio {
             margin: 70px 0px 30px 0px;
@@ -151,19 +160,19 @@ body {
             margin-top: 20px;
         }
 
-        /* Sección quien_soy */
+        /* Sección quien_soy.html */
 
         .lauraBarrios {
             display: flex;
             flex-direction: row;
             justify-content: center;
 
-            .lauraBarrios__Imagen {
+            .lauraBarrios__imagen {
                 margin-top: 30px;
                 transition: 1s;
             }
     
-            .lauraBarrios__Imagen:hover {
+            .lauraBarrios__imagen:hover {
                 transform: scale(1.1);
             }
         }
@@ -202,7 +211,7 @@ body {
             }
         }
 
-        /* Sección servicios_que_se_brindan */
+        /* Sección servicios_que_se_brindan.html */
 
         .imgMetodo {
             display: flex;
@@ -219,7 +228,7 @@ body {
             }
         }
 
-        /* Sección nuestros_horarios */
+        /* Sección nuestros_horarios.html */
 
         .tabla {
             width: 100%;
@@ -238,7 +247,7 @@ body {
             }
         }
 
-        /* Sección contacto */
+        /* Sección contacto.html */
 
         .telefonoMail__item {
             margin-bottom: 10px;
@@ -316,6 +325,8 @@ body {
 
     }
 
+    /* FOOTER */
+
     .container-fluid {
 
         .footerBootstrap {
@@ -341,7 +352,6 @@ body {
                 text-decoration: underline;
             }
         }
-
     }
 
     .contenedor {
@@ -354,15 +364,19 @@ body {
         }
     }
 
+    /* MEDIA QUERIE: VISTA EN PC */
+
     @media only screen and (min-width:768px) {
 
         /* Sección nuestros_horarios.html */
 
-        .tablaMobile {
+        .tabla__mobile {
             display: none;
         }
 
     }
+
+    /* MEDIA QUERIE: VISTA MOBILE */
 
     @media only screen and (max-width:768px) {
         
@@ -381,6 +395,16 @@ body {
             text-align: center;
         }
 
+        /* BARRA DE NAVEGACIÓN */
+
+        .contenedor {
+            .logoNav__mobile {
+                display: none;
+            }
+        }
+
+        /* PARALLAX */
+
         .parallax {
 
             background-image: url("../assets/img/panoramicaMobile.jpg");
@@ -397,20 +421,13 @@ body {
             }
         }
 
-        /* Navbar */
-
-        .contenedor {
-            
-            .logoNav__mobile {
-                display: none;
-            }
-        }
+        /* SECTION */
 
         .container {
 
             /* Sección index.html */
 
-            .imagenesJoseph__imagen--MobileNo {
+            .imagenesJoseph__imagen--mobileNo {
                 display: none;
             }
 
@@ -420,7 +437,7 @@ body {
 
             /* Sección quien_soy.html */
 
-            .lauraBarrios__Imagen {
+            .lauraBarrios__imagen {
                 height: 402px;
                 width: 311px;
             }
@@ -439,17 +456,17 @@ body {
                 margin-bottom: 10px;
             }
 
-            .imgMetodo__imgServicio--MobileNo {
+            .imgMetodo__imgServicio--mobileNo {
                 display: none;
             }
 
             /* Sección nuestros_horarios.html */
 
-            .tablaPC {
+            .tabla__PC {
                 display: none;
             }
 
-            .tablaMobile {
+            .tabla__mobile {
                 margin: 0px 30px 10px 30px;
             }
 
@@ -475,7 +492,7 @@ body {
             }
         }
 
-        /* Footer */
+        /* FOOTER */
         
         .container-fluid {
             
