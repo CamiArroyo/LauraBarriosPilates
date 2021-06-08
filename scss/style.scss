@@ -367,11 +367,14 @@ body {
     /* MEDIA QUERIE: VISTA EN PC */
 
     @media only screen and (min-width:768px) {
+    
+        .container {
 
-        /* Sección nuestros_horarios.html */
+            /* Sección nuestros_horarios.html */
 
-        .tabla__mobile {
-            display: none;
+            .tablaMobile {
+                display: none;
+            }
         }
 
     }
@@ -462,11 +465,11 @@ body {
 
             /* Sección nuestros_horarios.html */
 
-            .tabla__PC {
+            .tablaPC {
                 display: none;
             }
 
-            .tabla__mobile {
+            .tablaMobile {
                 margin: 0px 30px 10px 30px;
             }
 

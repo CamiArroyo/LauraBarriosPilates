@@ -268,9 +268,9 @@ body {
     background-color: #F67171;
     color: black; }
   @media only screen and (min-width: 768px) {
-    body {
+    body .container {
       /* Sección nuestros_horarios.html */ }
-      body .tabla__mobile {
+      body .container .tablaMobile {
         display: none; } }
   @media only screen and (max-width: 768px) {
     body {
@@ -320,9 +320,9 @@ body {
           margin-bottom: 10px; }
         body .container .imgMetodo__imgServicio--mobileNo {
           display: none; }
-        body .container .tabla__PC {
+        body .container .tablaPC {
           display: none; }
-        body .container .tabla__mobile {
+        body .container .tablaMobile {
           margin: 0px 30px 10px 30px; }
         body .container .redesSociales {
           display: flex;
